@@ -1,3 +1,4 @@
+#/bin/bash
 sudo pacman -Syu
 sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server firefox alacritty code qtile rofi sed which feh picom
 
@@ -8,11 +9,11 @@ sleep 5
 sudo cp settings/lightdm/lightdm.conf /etc/lightdm/
 sudo systemctl enable lightdm
 
-mkdir ~/.config
-cp -r settings/alacritty ~/.config/
-mkdir ~/backgrounds
-cp settings/start/Gracias.png ~/backgrounds/
-cp settings/start/.xsessions ~/
+sudo mkdir ~/.config
+sudo cp -r settings/alacritty ~/.config/
+sudo mkdir ~/backgrounds
+sudo cp settings/start/Gracias.png ~/backgrounds/
+sudo cp settings/start/.xsessions ~/
 sudo chmod u+x ~/.xsessions
 
 
