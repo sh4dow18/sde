@@ -1,4 +1,4 @@
-#/bin/bash
+#/bin/sh
 sudo pacman -Syu
 sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server firefox alacritty code qtile rofi sed which feh picom
 
@@ -14,8 +14,8 @@ sudo mkdir $USER/.config
 sudo cp -r settings/alacritty $USER/.config/
 sudo mkdir $USER/backgrounds
 sudo cp settings/start/Gracias.png $USER/backgrounds/
-sudo cp settings/start/.xsessions $USER/
-sudo chmod u+x $USER/.xsessions
+sudo cp settings/start/.xsession $USER/
+sudo chmod u+x $USER/.xsession
 
 
 echo -e "\n\nInstalacion Completada :D\n\n"
