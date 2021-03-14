@@ -17,5 +17,10 @@ sudo cp settings/start/Gracias.png $USER/backgrounds/
 sudo cp settings/start/.xsession $USER/
 sudo chmod u+x $USER/.xsession
 
+sudo chown -R $1:$1 $USER/.config
+sudo chown -R $1:$1 $USER/backgrounds
+sudo chown $1:$1 $USER/.xsession
+
+
 
 echo -e "\n\nInstalacion Completada :D\n\n"
