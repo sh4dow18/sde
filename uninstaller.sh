@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo systemctl disable lightdm
-sudo rm /etc/lightdm/
+sudo rm -r /etc/lightdm/
 
 sudo pacman -Rs lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server firefox alacritty code qtile rofi which feh picom
 
