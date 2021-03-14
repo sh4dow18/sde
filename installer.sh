@@ -1,4 +1,4 @@
-#/bin/sh
+#!/bin/bash
 sudo pacman -Syu
 sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server firefox alacritty code qtile rofi sed which feh picom
 
