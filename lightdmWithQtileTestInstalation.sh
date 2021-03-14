@@ -1,16 +1,19 @@
 sudo pacman -Syu
-sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server firefox alacritty code qtile rofi sed which feh picom
+
+
+echo -e "\n\nCargando Configuraciones...\n\n"
+sleep 5
+
 sudo cp settings/lightdm/lightdm.conf /etc/lightdm/
 sudo systemctl enable lightdm
-sudo pacman -S qtile xterm
 
-sudo pacman -S firefox alacritty code
+mkdir ~/.config
 cp -r settings/alacritty ~/.config/
-sudo pacman -S rofi sed which
-sudo pacman -S feh
 mkdir ~/backgrounds
 cp settings/start/Gracias.png ~/backgrounds/
 cp settings/start/.xsessions ~/
 sudo chmod u+x ~/.xsessions
-sudo pacman -S picom
+
+
 echo -e "\n\nInstalacion Completada :D\n\n"
