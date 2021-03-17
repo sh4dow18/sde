@@ -5,7 +5,7 @@
 # My Github: https://www.github.com/Cyb3rHunter
 # My Gaming, Reactions and Computing Spanish Youtube Channel: https://www.youtube.com/RamgiD
 
-from typing import List  # noqa: F401
+from typing import List  
 
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
@@ -77,10 +77,10 @@ for i, j in enumerate(groups):
     ])
 
 layouts = [
-    # layout.Columns(border_focus_stack='#d75f5f'),
     layout.Max(),
     layout.MonadTall(),
     layout.VerticalTile(),
+    # layout.Columns(border_focus_stack='#d75f5f'),
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
     # layout.Matrix(),
@@ -107,7 +107,8 @@ screens = [
                     inactive=["#ffffff", "#ffffff"],
                     this_current_screen_border=["f07178", "f07178"],
                     highlight_method='block',
-                    margin_y=4.4
+                    margin_y=4.4,
+                    padding_y=7
                 ),
                 widget.WindowName(
                     foreground=["f07178", "f07178"],
