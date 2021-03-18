@@ -43,15 +43,15 @@ sudo chmod u+x $USER/.xrandr_monitor.sh
 # Installing Black Theme
 sudo unzip settings/gtk/theme/Material-Black-Blueberry.zip
 sudo unzip settings/gtk/icons/Material-Black-Blueberry-Suru.zip
-sudo mv settings/gtk/theme/Material-Black-Blueberry/ /usr/share/themes/
-sudo mv settings/gtk/icons/Material-Black-Blueberry-Suru/ /usr/share/icons/
+sudo mv Material-Black-Blueberry/ /usr/share/themes/
+sudo mv Material-Black-Blueberry-Suru/ /usr/share/icons/
 cp settings/gtk/install/gtkrc-2.0 $USER/
 mkdir $USER/.config/gtk3.0
 cp settings/gtk/install/settings.ini $USER/.config/gtk3.0/
 
 # Installing New Cursor
 sudo tar -xf settings/gtk/icons/Breeze.tar.gz
-sudo mv settings/gtk/cursor/Breeze/ /usr/share/icons/
+sudo mv Breeze/ /usr/share/icons/
 sudo cp settings/gtk/cursor/index.theme /usr/share/icons/default/
 
 # Changing the new files owner
