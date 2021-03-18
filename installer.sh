@@ -8,7 +8,7 @@
 sudo pacman -Syu
 
 # Installing Programs
-sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor
 
 # Creating User Home's Variable
 USER=/home/$1
@@ -39,6 +39,23 @@ sudo chmod u+x $USER/.xsession
 # Installing Monitor Configuration Bash Script
 cp settings/start/.xrandr_monitor.sh $USER/
 sudo chmod u+x $USER/.xrandr_monitor.sh
+
+# Installing Black Theme
+sudo cp settings/gtk/theme/Material-Black-Blueberry.zip /usr/share/themes/
+sudo cp settings/gtk/icons/Material-Black-Blueberry-Suru.zip /usr/share/icons/
+sudo unzip /usr/share/themes/Material-Black-Blueberry.zip
+sudo unzip /usr/share/icons/Material-Black-Blueberry-Suru.zip
+sudo rm /usr/share/themes/Material-Black-Blueberry.zip
+sudo rm /usr/share/icons/Material-Black-Blueberry-Suru.zip
+cp settings/gtk/install/gtkrc-2.0 $USER/
+mkdir $USER/.config/gtk3.0
+cp settings/gtk/install/settings.ini $USER/.config/gtk3.0/
+
+# Installing New Cursor
+sudo cp settings/gtk/cursor/Breeze.tar.gz /usr/share/icons/
+sudo tar -xf /usr/share/icons/Breeze.tar.gz
+sudo rm /usr/share/icons/Breeze.tar.gz
+sudo cp settings/gtk/cursor/index.theme /usr/share/icons/default/
 
 # Changing the new files owner
 sudo chown -R $1:$1 $USER/.config

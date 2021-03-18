@@ -65,7 +65,9 @@ keys = [
     Key([mod], "z", lazy.spawn("rofi -show run"), desc="Open Rofis Menu"),
     Key([mod], "f", lazy.spawn("firefox"), desc="Open Firefox"),
     Key([mod], "c", lazy.spawn("code"), desc="Open Visual Studio Code"),
-    Key([mod], "g", lazy.spawn("gimp"), desc="Open Gimp")
+    Key([mod], "g", lazy.spawn("gimp"), desc="Open Gimp"),
+    Key([mod], "s", lazy.spawn("scrot"), desc="Make a Screenshot"),
+    Key([mod], "t", lazy.spawn("thunar"), desc="Open Thunar File Explorer")
 ]
 
 groups = [Group(i) for i in ["WWW", "DEV", "TERM", "MISC"]]
