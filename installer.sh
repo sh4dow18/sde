@@ -48,8 +48,8 @@ sudo cp -r Material-Black-Blueberry/ /usr/share/themes/
 sudo rm -r Material-Black-Blueberry/
 sudo mv Material-Black-Blueberry-Suru/ /usr/share/icons/
 cp settings/gtk/install/gtkrc-2.0 $USER/
-mkdir $USER/.config/gtk3.0
-cp settings/gtk/install/settings.ini $USER/.config/gtk3.0/
+mkdir $USER/.config/gtk-3.0
+cp settings/gtk/install/settings.ini $USER/.config/gtk-3.0/
 
 # Installing New Cursor
 sudo tar -xf settings/gtk/cursor/Breeze.tar.gz
