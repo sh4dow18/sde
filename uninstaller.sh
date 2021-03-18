@@ -14,8 +14,8 @@ sudo pacman -Rs lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server qtil
 # Creating User Home's Variable
 USER=/home/$1
 
-# Removing Config and Backgrounds Directories, also Startup Configuration File(.xsession)
-sudo rm -r $USER/.config $USER/backgrounds $USER/.xsession
+# Removing Config and Backgrounds Directories, also Startup Configuration File(.xsession) and Monitor Configuration Bash Script(.xrandr_monitor.sh)
+sudo rm -r $USER/.config $USER/backgrounds $USER/.xsession $USER/.xrandr_monitor.sh
 
 # Saying that the Uninstall has Finished
 echo -e "\n\nDesinstalacion Completada :D\n\n"

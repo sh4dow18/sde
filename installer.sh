@@ -36,10 +36,15 @@ cp settings/start/Gracias.png $USER/backgrounds/
 cp settings/start/.xsession $USER/
 sudo chmod u+x $USER/.xsession
 
+# Installing Monitor Configuration Bash Script
+cp settings/start/.xrandr_monitor.sh $USER/
+sudo chmod u+x $USER/.xrandr_monitor.sh
+
 # Changing the new files owner
 sudo chown -R $1:$1 $USER/.config
 sudo chown -R $1:$1 $USER/backgrounds
 sudo chown $1:$1 $USER/.xsession
+sudo chown $1:$1 $USER/.xrandr_monitor.sh
 
 # Saying that the Installation has finished
 echo -e "\n\nInstalation Complete :D\n\n"
