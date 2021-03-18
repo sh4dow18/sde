@@ -9,7 +9,7 @@ sudo systemctl disable lightdm
 sudo rm -r /etc/lightdm/
 
 # Uninstalling Programs
-sudo pacman -Rs lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr
+sudo pacman -Rs lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server qtile alacritty rofi which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr
 
 # Creating User Home's Variable
 USER=/home/$1

@@ -1,3 +1,3 @@
 # ArchLinux
 
-Este proyecto está en proceso de desarrollo
+This project is under development
