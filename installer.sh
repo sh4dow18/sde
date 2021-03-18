@@ -8,7 +8,7 @@
 sudo pacman -Syu
 
 # Installing Programs
-sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server qtile alacritty rofi sed which feh firefox code picom gimp
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr
 
 # Creating User Home's Variable
 USER=/home/$1
