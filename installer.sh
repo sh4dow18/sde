@@ -50,7 +50,7 @@ mkdir $USER/.config/gtk3.0
 cp settings/gtk/install/settings.ini $USER/.config/gtk3.0/
 
 # Installing New Cursor
-sudo tar -xf settings/gtk/icons/Breeze.tar.gz
+sudo tar -xf settings/gtk/cursor/Breeze.tar.gz
 sudo mv Breeze/ /usr/share/icons/
 sudo cp settings/gtk/cursor/index.theme /usr/share/icons/default/
 
