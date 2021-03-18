@@ -18,7 +18,7 @@ USER=/home/$1
 sudo rm -r $USER/.config $USER/backgrounds $USER/.xsession $USER/.xrandr_monitor.sh
 
 # Removing Black Theme and New Cursor
-sudo rm -r /user/share/theme/Material-Black-Blueberry/ /user/share/icons/Material-Black-Blueberry-Suru/ $USER/gtkrc-2.0 $USER/.config/gtk3.0/ /usr/share/icons/Breeze/ /usr/share/icons/default/index.theme
+sudo rm -r /user/share/theme/Material-Black-Blueberry/ /user/share/icons/Material-Black-Blueberry-Suru/ $USER/gtkrc-2.0 /usr/share/icons/Breeze/ /usr/share/icons/default/index.theme
 
 # Saying that the Uninstall has Finished
 echo -e "\n\nDesinstalacion Completada :D\n\n"
