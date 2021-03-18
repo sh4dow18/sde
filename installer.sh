@@ -43,7 +43,9 @@ sudo chmod u+x $USER/.xrandr_monitor.sh
 # Installing Black Theme
 sudo unzip settings/gtk/theme/Material-Black-Blueberry.zip
 sudo unzip settings/gtk/icons/Material-Black-Blueberry-Suru.zip
-sudo mv Material-Black-Blueberry/ /usr/share/themes/
+sudo rm -r /usr/share/themes/*
+sudo cp -r Material-Black-Blueberry/ /usr/share/themes/
+sudo rm -r Material-Black-Blueberry/
 sudo mv Material-Black-Blueberry-Suru/ /usr/share/icons/
 cp settings/gtk/install/gtkrc-2.0 $USER/
 mkdir $USER/.config/gtk3.0
