@@ -46,6 +46,7 @@ sudo chmod u+x $USER/.xrandr_monitor.sh
 
 # Installing Rofi Menu Configuration
 sudo cp settings/rofi/onedark.rasi /usr/share/rofi/themes/
+mkdir $USER/.config/rofi
 cp settings/rofi/config $USER/.config/rofi/
 
 # Installing Black Theme
