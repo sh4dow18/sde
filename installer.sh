@@ -8,7 +8,7 @@
 sudo pacman -Syu
 
 # Installing Programs
-sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf
 
 # Creating User Home's Variable
 USER=/home/$1
@@ -22,6 +22,10 @@ sudo mkdir $USER/.config
 
 # Installing Qtile Configuration
 cp -r settings/qtile $USER/.config/
+
+# Installing OpenBox Configuration
+cp -r settings/OpenBox/RookieMode/openbox/ $USER/.config/
+cp -r settings/OpenBox/RookieMode/tint2/ $USER/.config/
 
 # Installing Alacritty Configuration
 sudo cp -r settings/alacritty $USER/.config/
@@ -39,6 +43,10 @@ sudo chmod u+x $USER/.xsession
 # Installing Monitor Configuration Bash Script
 cp settings/start/.xrandr_monitor.sh $USER/
 sudo chmod u+x $USER/.xrandr_monitor.sh
+
+# Installing Rofi Menu Configuration
+sudo cp settings/rofi/onedark.rasi /usr/share/rofi/themes/
+cp settings/rofi/config $USER/.config/rofi/
 
 # Installing Black Theme
 sudo unzip settings/gtk/theme/Material-Black-Blueberry.zip
@@ -64,6 +72,7 @@ sudo chown $1:$1 $USER/.xrandr_monitor.sh
 sudo chown -R $1:$1 /usr/share/themes/Material-Black-Blueberry/
 sudo chown -R $1:$1 /usr/share/icons/Material-Black-Blueberry-Suru/
 sudo chown $1:$1 $USER/gtkrc-2.0
+sudo chown $1:$1 /usr/share/rofi/themes/onedark.rasi
 
 # Saying that the Installation has finished
 echo -e "\n\nInstalation Completed :D\n\n"
