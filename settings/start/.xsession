@@ -42,4 +42,4 @@ setxkbmap es &
 picom &
 udiskie -t &
 xrandr --output $userMonitor --primary --mode preferred
-feh --bg-scale ~/backgrounds/Gracias.png &
+feh --bg-scale ~/backgrounds/Thanks.png &

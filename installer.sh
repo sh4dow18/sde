@@ -8,7 +8,7 @@
 sudo pacman -Syu
 
 # Installing Programs
-sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib
 
 # Creating User Home's Variable
 USER=/home/$1
@@ -30,7 +30,7 @@ sudo cp -r settings/alacritty $USER/.config/
 sudo mkdir $USER/backgrounds
 
 # Installing Thank You for Install Background
-cp settings/start/Gracias.png $USER/backgrounds/
+cp settings/start/Thanks.png $USER/backgrounds/
 
 # Installing Startup Configuration File (.xsession)
 cp settings/start/.xsession $USER/
@@ -61,6 +61,9 @@ sudo chown -R $1:$1 $USER/.config
 sudo chown -R $1:$1 $USER/backgrounds
 sudo chown $1:$1 $USER/.xsession
 sudo chown $1:$1 $USER/.xrandr_monitor.sh
+sudo chown -R $1:$1 /usr/share/themes/Material-Black-Blueberry/
+sudo chown -R $1:$1 /usr/share/icons/Material-Black-Blueberry-Suru/
+sudo chown $1:$1 $USER/gtkrc-2.0
 
 # Saying that the Installation has finished
-echo -e "\n\nInstalation Complete :D\n\n"
+echo -e "\n\nInstalation Completed :D\n\n"

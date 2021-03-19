@@ -10,7 +10,6 @@ from typing import List
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
-from libqtile.utils import guess_terminal
 
 mod = "mod4"
 terminal = "alacritty"
@@ -96,7 +95,7 @@ layouts = [
 widget_defaults = dict(
     font='sans',
     fontsize=12,
-    padding=3,
+    padding=3
 )
 extension_defaults = widget_defaults.copy()
 
@@ -107,14 +106,23 @@ screens = [
                 widget.GroupBox(
                     borderwidth=1,
                     inactive=["#ffffff", "#ffffff"],
-                    this_current_screen_border=["f07178", "f07178"],
+                    # this_current_screen_border=["f07178", "f07178"],
+                    this_current_screen_border=["037bfc", "037bfc"],
                     highlight_method='block',
-                    margin_y=4.4,
-                    padding_y=7
+                    margin_y=3.2
+                ),
+                widget.TextBox(
+                    text="Window:"
                 ),
                 widget.WindowName(
-                    foreground=["f07178", "f07178"],
-                    fontsize=14
+                    # foreground=["f07178", "f07178"],
+                    foreground=["03bafc", "03bafc"],
+                    fontsize=12
+                ),
+                widget.CheckUpdates(
+                    display_format='Updates: {updates}',
+                    execute='alacritty',
+                    update_interval=3600
                 ),
                 widget.CurrentLayout(
                     fontsize=14
