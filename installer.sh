@@ -8,7 +8,7 @@
 sudo pacman -Syu
 
 # Installing Programs
-sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf
 
 # Creating User Home's Variable
 USER=/home/$1
@@ -50,15 +50,15 @@ mkdir $USER/.config/rofi
 cp settings/rofi/config $USER/.config/rofi/
 
 # Installing Black Theme
-sudo unzip settings/gtk/theme/Material-Black-Blueberry.zip
-sudo unzip settings/gtk/icons/Material-Black-Blueberry-Suru.zip
-sudo rm -r /usr/share/themes/*
-sudo cp -r Material-Black-Blueberry/ /usr/share/themes/
-sudo rm -r Material-Black-Blueberry/
-sudo mv Material-Black-Blueberry-Suru/ /usr/share/icons/
-cp settings/gtk/install/gtkrc-2.0 $USER/
-mkdir $USER/.config/gtk-3.0
-cp settings/gtk/install/settings.ini $USER/.config/gtk-3.0/
+# sudo unzip settings/gtk/theme/Material-Black-Blueberry.zip
+# sudo unzip settings/gtk/icons/Material-Black-Blueberry-Suru.zip
+# sudo rm -r /usr/share/themes/*
+# sudo cp -r Material-Black-Blueberry/ /usr/share/themes/
+# sudo rm -r Material-Black-Blueberry/
+# sudo mv Material-Black-Blueberry-Suru/ /usr/share/icons/
+# cp settings/gtk/install/gtkrc-2.0 $USER/
+# mkdir $USER/.config/gtk-3.0
+# cp settings/gtk/install/settings.ini $USER/.config/gtk-3.0/
 
 # Installing New Cursor
 sudo tar -xf settings/gtk/cursor/Breeze.tar.gz
