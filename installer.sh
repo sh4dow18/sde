@@ -8,7 +8,7 @@
 sudo pacman -Syu
 
 # Installing Programs
-sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf exa
 
 # Creating User Home's Variable
 USER=/home/$1
@@ -48,6 +48,9 @@ sudo chmod u+x $USER/.xrandr_monitor.sh
 sudo cp settings/rofi/onedark.rasi /usr/share/rofi/themes/
 mkdir $USER/.config/rofi
 cp settings/rofi/config $USER/.config/rofi/
+
+# Installing Bash Configuation File
+cp settings/start/.bashrc $USER/
 
 # Installing Black Theme
 # sudo unzip settings/gtk/theme/Material-Black-Blueberry.zip
