@@ -8,7 +8,7 @@
 sudo pacman -Syu
 
 # Installing Programs
-sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf exa
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf exa fish
 
 # Creating User Home's Variable
 USER=/home/$1
@@ -77,6 +77,10 @@ sudo chown $1:$1 $USER/.xrandr_monitor.sh
 # sudo chown -R $1:$1 /usr/share/icons/Material-Black-Blueberry-Suru/
 # sudo chown $1:$1 $USER/gtkrc-2.0
 sudo chown $1:$1 /usr/share/rofi/themes/onedark.rasi
+
+# Changing to the "Fish" shell and Installing "Fish" Configuration
+sudo chsh -s /bin/fish $1
+cp -r settings/fish $USER/.config
 
 # Saying that the Installation has finished
 echo -e "\n\nInstalation Completed :D\n\n"
