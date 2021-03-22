@@ -1,29 +1,8 @@
 #!/bin/bash
 
-echo -e "\e[1;32m     _____                _           _   _"
-echo -e "\e[1;32m    / ____|              | |         | | | |            _" 
-echo -e "\e[1;32m   | |     _ __ ___  __ _| |_ ___  __| | | |__  _   _  (_)"
-echo -e "\e[1;32m   | |    | '__/ _ \\/ _` | __/ _ \\/ _` | | '_ \\| | | |"
-echo -e "\e[1;32m   | |____| | |  __/ (_| | ||  __/ (_| | | |_) | |_| |  _" 
-echo -e "\e[1;32m    \\_____|_|  \\___|\\__,_|\\__\\___|\\__,_| |_.__/ \\__, | (_)"
-echo -e "\e[1;32m                                                 __/ |"
-echo -e "\e[1;32m                                                |___/ "                                                                             
-
-echo -e "\e[1;36m   _______           ______   ______   _______                    _       _________ _______  _______ "
-echo -e "\e[1;36m  (  ____ \\|\\     /|(  ___ \\ / ___  \\ (  ____ )|\\     /||\\     /|( (    /|\\__   __/(  ____ \\(  ____ )"
-echo -e "\e[1;36m  | (    \\/( \\   / )| (   ) )\\/   \\  \\| (    )|| )   ( || )   ( ||  \\  ( |   ) (   | (    \\/| (    )|"
-echo -e "\e[1;36m  | |       \\ (_) / | (__/ /    ___) /| (____)|| (___) || |   | ||   \ | |   | |   | (__    | (____)|"
-echo -e "\e[1;36m  | |        \\   /  |  __ (    (___ ( |     __)|  ___  || |   | || (\\ \\) |   | |   |  __)   |     __)"
-echo -e "\e[1;36m  | |         ) (   | (  \\ \\       ) \\| (\\ (   | (   ) || |   | || | \   |   | |   | (      | (\\ ("   
-echo -e "\e[1;36m  | (____/\\   | |   | )___) )/\\___/  /| ) \\ \\__| )   ( || (___) || )  \\  |   | |   | (____/\\| ) \\ \\__"
-echo -e "\e[1;36m  (_______/   \\_/   |/ \___/ \\______/ |/   \\__/|/     \\|(_______)|/    )_)   )_(   (_______/|/   \\__/"
-
-echo -e "\e[1;35mMy Github:"
-echo -e "\e[1;33mhttps://www.github.com/Cyb3rHunter\n"
-
-echo -e "\e[1;35mMy Gaming, Reactions and Computing"
-echo -e "\e[1;35mSpanish Channel:"
-echo -e "\e[1;33mhttps://www.youtube.com/RamgiD\n"
+# Created By: Cyb3rHunter
+# My Github: https://github.com/Cyb3rHunter
+# My Reactions, Gaming and Computing Spanish Youtube Channel: https://youtube.com/c/RamgiD
 
 # Installing System Updates
 sudo pacman -Syu
