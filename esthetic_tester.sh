@@ -9,19 +9,16 @@ echo -e "\e[1;32m    \\_____|_|  \\___|\\__,_|\\__\\___|\\__,_| |_.__/ \\__, | (
 echo -e "\e[1;32m                                                 __/ |"
 echo -e "\e[1;32m                                                |___/ "                                                                             
 
-echo -e "\e[1;36m     ______          __         ______         ____  ____                   _                  
-echo -e "\e[1;36m   .' ___  |        [  |       / ____ \`.      |_   ||   _|                 / |_                
-echo -e "\e[1;36m  / .'   \\_|  _   __ | |.--.   \`'  __) | _ .--. | |__| |  __   _   _ .--. \`| |-'.---.  _ .--.  
-echo -e "\e[1;36m  | |        [ \\ [  ]| '/'\`\\ \\ _  |__ '.[ \`/'\`\\]|  __  | [  | | | [ \`.-. | | | / /__\\\\[ \`/'\`\\] 
-echo -e "\e[1;36m  \ \`.___.'\\  \\ '/ / |  \\__/ || \\____) | | |   _| |  | |_ | \\_/ |, | | | | | |,| \\__., | |     
-echo -e "\e[1;36m   `.____ .'[\\_:  / [__;.__.'  \\______.'[___] |____||____|'.__.'_/[___||__]\__/ '.__.'[___]    
-echo -e "\e[1;36m             \\__.'                                                                             
+echo -e "\e[1;36m     ______          __         ______         ____  ____                   _    "              
+echo -e "\e[1;36m   .' ___  |        [  |       / ____ \`.      |_   ||   _|                 / |_   "             
+echo -e "\e[1;36m  / .'   \\_|  _   __ | |.--.   \`'  __) | _ .--. | |__| |  __   _   _ .--. \`| |-'.---.  _ .--. " 
+echo -e "\e[1;36m  | |        [ \\ [  ]| '/'\`\\ \\ _  |__ '.[ \`/'\`\\]|  __  | [  | | | [ \`.-. | | | / /__\\\\[ \`/'\`\\] "
+echo -e "\e[1;36m  \ \`.___.'\\  \\ '/ / |  \\__/ || \\____) | | |   _| |  | |_ | \\_/ |, | | | | | |,| \\__., | |     "
+echo -e "\e[1;36m   \`.____ .'[\\_:  / [__;.__.'  \\______.'[___] |____||____|'.__.'_/[___||__]\__/ '.__.'[___]    "
+echo -e "\e[1;36m             \\__.'                                                                             "
 
-echo -e "\e[1;32mMy Github:"
-echo -e "\e[1;36mhttps://www.github.com/Cyb3rHunter\n"
-
-echo -e "\e[1;32mMy Gaming, Reactions and Computing"
-echo -e "\e[1;32mSpanish Channel:"
-echo -e "\e[1;36mhttps://www.youtube.com/RamgiD\n"
+echo -e "\e[1;32m\n  My Github where I will Create				My Gaming, Reactions and Computing"
+echo -e "\e[1:32m  more Tools for Different Areas			Spanish Youtube Channel:"
+echo -e "\e[1;36m  https://github.com/Cyb3rHunter			https://youtube.com/c/RamgiD\n"
 
 echo -e "\e[1;37m :D"
