@@ -1,9 +1,30 @@
 #!/bin/bash
 
-# Created by Cyb3rHunter
-# My Github: https://www.github.com/Cyb3rHunter
-# My Gaming, Reactions and Computing Spanish Channel: https://www.youtube.com/RamgiD
+echo -e "\e[1;32m     _____                _           _   _"
+echo -e "\e[1;32m    / ____|              | |         | | | |            _" 
+echo -e "\e[1;32m   | |     _ __ ___  __ _| |_ ___  __| | | |__  _   _  (_)"
+echo -e "\e[1;32m   | |    | '__/ _ \/ _` | __/ _ \/ _` | | '_ \| | | |"
+echo -e "\e[1;32m   | |____| | |  __/ (_| | ||  __/ (_| | | |_) | |_| |  _" 
+echo -e "\e[1;32m    \_____|_|  \___|\__,_|\__\___|\__,_| |_.__/ \__, | (_)"
+echo -e "\e[1;32m                                                 __/ |"
+echo -e "\e[1;32m                                                |___/ "                                                                             
 
+echo -e "\e[1;34m   _______           ______   ______   _______                    _       _________ _______  _______ "
+echo -e "\e[1;34m  (  ____ \|\     /|(  ___ \ / ___  \ (  ____ )|\     /||\     /|( (    /|\__   __/(  ____ \(  ____ )"
+echo -e "\e[1;34m  | (    \/( \   / )| (   ) )\/   \  \| (    )|| )   ( || )   ( ||  \  ( |   ) (   | (    \/| (    )|"
+echo -e "\e[1;34m  | |       \ (_) / | (__/ /    ___) /| (____)|| (___) || |   | ||   \ | |   | |   | (__    | (____)|"
+echo -e "\e[1;34m  | |        \   /  |  __ (    (___ ( |     __)|  ___  || |   | || (\ \) |   | |   |  __)   |     __)"
+echo -e "\e[1;34m  | |         ) (   | (  \ \       ) \| (\ (   | (   ) || |   | || | \   |   | |   | (      | (\ ("   
+echo -e "\e[1;34m  | (____/\   | |   | )___) )/\___/  /| ) \ \__| )   ( || (___) || )  \  |   | |   | (____/\| ) \ \__"
+echo -e "\e[1;34m  (_______/   \_/   |/ \___/ \______/ |/   \__/|/     \|(_______)|/    )_)   )_(   (_______/|/   \__/"
+
+echo -e "\e[1;36mMy Github:"
+echo -e "\e[1;33mhttps://www.github.com/Cyb3rHunter\n"
+
+echo -e "\e[1;36mMy Gaming, Reactions and Computing"
+echo -e "\e[1;36mSpanish Channel:"
+echo -e "\e[1;33mhttps://www.youtube.com/RamgiD\n"
+|
 # Installing System Updates
 sudo pacman -Syu
 
