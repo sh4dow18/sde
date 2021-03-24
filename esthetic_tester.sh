@@ -20,5 +20,26 @@ echo -e "\e[1;36m             \\__.'                                            
 echo -e "\e[1;32m\n  My Github where I will Create				My Gaming, Reactions and Computing"
 echo -e "\e[1:32m  more Tools for Different Areas			Spanish Youtube Channel:"
 echo -e "\e[1;36m  https://github.com/Cyb3rHunter			https://youtube.com/c/RamgiD\n"
+sleep(5)
 
-echo -e "\e[1;37m :D"
+clear
+echo -e "\e[1;31m    __  __        __     __  _             __  __         ____         __          "
+echo -e "\e[1;31m   / / / /__  ___/ /__ _/ /_(_)__  ___ _  / /_/ /  ___   / __/_ _____ / /____ __ _ "
+echo -e "\e[1;31m  / /_/ / _ \\/ _  / _ \`/ __/ / _ \\/ _ \`/ / __/ _ \\/ -_) _\\ \\/ // (_-</ __/ -_)  \' \\"
+echo -e "\e[1;31m  \\____/ .__/\\_,_/\\_,_/\\__/_/_//_/\\_, /  \\__/_//_/\\__/ /___/\\_, /___/\\__/\\__/_/_/_/"
+echo -e "\e[1;31m      /_/                        /___/                     /___/                   "
+
+echo -e "\e[1;33m\n\nLooking for Updates..."
+sleep(3)             
+
+clear
+echo -e "\e[1;31m     ____         __       _____             ___                                 "
+echo -e "\e[1;31m    /  _/__  ___ / /____ _/ / (_)__  ___ _  / _ \\_______  ___ ________ ___ _  ___"
+echo -e "\e[1;31m   _/ // _ \\(_-</ __/ _ \`/ / / / _ \\/ _ \`/ / ___/ __/ _ \\/ _ \`/ __/ _ \`/  ' \(_-<"
+echo -e "\e[1;31m  /___/_//_/___/\\__/\\_,_/_/_/_/_//_/\\_, / /_/  /_/  \\___/\\_, /_/  \\_,_/_/_/_/___/"
+echo -e "\e[1;31m                                   /___/                /___/                    "
+
+echo -e "\e[1;31m\n\nLooking for the Necessary Programs..."
+sleep(5)
+
+echo -e "\e[1;37m\n\nIntalation Completed :D"
