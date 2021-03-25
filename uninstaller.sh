@@ -78,7 +78,7 @@ echo -e "\e[1;36m	- Changing to the Bash shell\n"
 sudo chsh -s /bin/bash $1 > /dev/null
 
 sleep 3
-echo -e "\e[1;31m\e[1;1m\nLoading..."
+echo -e "\e[1;31m\e[1;1mLoading..."
 sleep 5
 
 clear
@@ -97,7 +97,7 @@ sudo pacman -Rsn lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-s
 echo -e "\e[1;33m\nIf you think you will use this installer again, select "no" to the following options"
 echo -e "\e[1;33mso as not to clear the cache of the programs. If you think you will not use the"
 echo -e "\e[1;33minstaller again, select "yes" to delete it."
-echo -e "\e[1;32m\n"
+echo -e "\e[1;32m                 "
 # Cleaning Pacman Cache
 sudo pacman -Sc
 
@@ -140,7 +140,7 @@ echo -e "\e[1;35m	- Removing Cursor\n"
 
 # Removing Black Theme and New Cursor
 # sudo rm -r /usr/share/themes/Material-Black-Blueberry/ /usr/share/icons/Material-Black-Blueberry-Suru/ $USER/gtkrc-2.0
-sudo rm -r /usr/share/icons/Breeze/ /usr/share/icons/default/index.theme
+sudo rm -r /usr/share/icons/Breeze/ # /usr/share/icons/default/index.theme
 
 sleep 3
 
