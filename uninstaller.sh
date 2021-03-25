@@ -15,7 +15,7 @@ USER=/home/$1
 sudo chsh -s /bin/bash $1
 
 # Uninstalling Programs
-sudo pacman -Rs lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf exa fish
+sudo pacman -Rsn lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf exa fish
 
 # Removing Config and Backgrounds Directories, also Startup Configuration File(.xsession) and Monitor Configuration Bash Script(.xrandr_monitor.sh)
 sudo rm -r $USER/.config $USER/backgrounds $USER/.xsession $USER/.xrandr_monitor.sh
