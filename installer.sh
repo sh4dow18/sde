@@ -207,7 +207,7 @@ echo -e "\e[1;33m                                     \`;..\`\`::::''..;'				"
 echo -e "\e[1;33m                                       \`\`::,,,,::''					"
 
 echo -e "\e[1;37mThe system needs to be rebooted"
-echo -e "\e[1;37m¿Do you want to reboot your system now?"
+echo -e "\e[1;37m¿Do you want to reboot your system now? [Y,n]"
 read rb
 
 if [[ $rb == [yY] ]]; then
