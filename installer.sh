@@ -136,6 +136,7 @@ echo -e "\e[1;36m\n	- Installing New Cursor"
 # Installing New Cursor
 sudo tar -xf settings/gtk/cursor/Breeze.tar.gz
 sudo mv Breeze/ /usr/share/icons/
+sudo mkdir /usr/share/icons/default/ 2>/dev/null
 sudo cp settings/gtk/cursor/index.theme /usr/share/icons/default/
 
 sleep 3
