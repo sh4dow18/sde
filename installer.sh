@@ -184,6 +184,8 @@ sudo chown $1:$1 $USER/.xrandr_monitor.sh
 # sudo chown $1:$1 $USER/gtkrc-2.0
 sudo chown $1:$1 /usr/share/rofi/themes/onedark.rasi
 
+sleep 3
+
 clear
 echo -e "\e[1;32m _____           _        _       _   _                _____                      _      _       "
 echo -e "\e[1;32m|_   _|         | |      | |     | | (_)              / ____|                    | |    | |      "
