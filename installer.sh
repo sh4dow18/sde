@@ -45,7 +45,7 @@ echo -e "\e[1;32m _/ // _ \\(_-</ __/ _ \`/ / / / _ \\/ _ \`/ / /_/ / _ \\/ _  /
 echo -e "\e[1;32m/___/_//_/___/\\__/\\_,_/_/_/_/_//_/\\_, /  \\____/ .__/\\_,_/\\_,_/\\__/\\__/___/"
 echo -e "\e[1;32m                                 /___/       /_/                          "
 
-echo -e "\e[1;33m\n\nLooking for System Updates..."
+echo -e "\e[1;33m\n\nLooking for System Updates...\n"
 sleep 5
 
 # Installing System Updates
@@ -61,7 +61,7 @@ echo -e "\e[1;32m _/ // _ \\(_-</ __/ _ \`/ / / / _ \\/ _ \`/ / ___/ __/ _ \\/ _
 echo -e "\e[1;32m/___/_//_/___/\\__/\\_,_/_/_/_/_//_/\\_, / /_/  /_/  \\___/\\_, /_/  \\_,_/_/_/_/___/"
 echo -e "\e[1;32m                                 /___/                /___/                    "
 
-echo -e "\e[1;36m\n\nLooking for the Necessary Programs..."
+echo -e "\e[1;36m\n\nLooking for the Necessary Programs...\n"
 sleep 5
 
 # Installing Programs
@@ -89,7 +89,7 @@ USER=/home/$1
 
 echo -e "\e[1;31m\n	- Installing Lightdm Configuration"
 sudo cp settings/lightdm/lightdm.conf /etc/lightdm/
-sudo systemctl enable lightdm
+sudo systemctl enable lightdm > /dev/null
 
 # Creating Configuration Directory
 sudo mkdir $USER/.config
@@ -126,7 +126,7 @@ sleep 3
 echo -e "\e[1;35m\n	- Installing Fish Configuration"
 
 # Changing to the "Fish" shell and Installing "Fish" Configuration
-sudo chsh -s /bin/fish $1
+sudo chsh -s /bin/fish $1 > /dev/null
 cp -r settings/fish $USER/.config
 
 sleep 3
@@ -140,7 +140,7 @@ sudo cp settings/gtk/cursor/index.theme /usr/share/icons/default/
 
 sleep 3
 
-echo -e "\e[1;36m\n	- Installing Startup Files"
+echo -e "\e[1;31m\n	- Installing Startup Files"
 
 # Installing Startup Configuration File (.xsession)
 cp settings/start/.xsession $USER/
@@ -152,7 +152,7 @@ sudo chmod u+x $USER/.xrandr_monitor.sh
 
 sleep 3
 
-echo -e "\e[1;31m\n	- Installing Final Files..."
+echo -e "\e[1;32m\n	- Installing Final Files..."
 
 # Creating Backgrounds Directory
 sudo mkdir $USER/backgrounds
