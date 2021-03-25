@@ -208,4 +208,14 @@ echo -e "\e[1;33m                                       \`\`::,,,,::''					"
 
 echo -e "\e[1;37mThe system needs to be rebooted"
 echo -e "\e[1;37m¿Do you want to reboot your system now?"
-sleep 5
+read rb
+
+if [[ $rb == [yY] ]]; then
+	echo -e "\e[1;32m\nRebooting the system...\n"
+	sleep 3
+	reboot
+else
+	echo -e "\e[1;32m\nFinishing the install..."
+	echo -e "\e[1;37m\                "
+	sleep 3
+fi
