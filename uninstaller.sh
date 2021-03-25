@@ -10,8 +10,14 @@ echo -e "\e[1;31m| || || || (   ) || (\\ (   | | \\   |   | |   | | \\   || | \\
 echo -e "\e[1;31m| () () || )   ( || ) \\ \\__| )  \\  |___) (___| )  \\  || (___) |   _ "
 echo -e "\e[1;31m(_______)|/     \\||/   \\__/|/    )_)\\_______/|/    )_)(_______)  (_)"
 
-echo -e "\e[1;33m\nYou will run the uninstaller. Are you sure?"
-sleep 5
+echo -e "\e[1;33m\nYou will run the uninstaller. Are you sure? [Y,n]"
+read option
+
+if [[ $option -eq [Nn] ]]; then
+	echo -e "\e[1;31m\nShutting down uninstaller...\n"
+	sleep 3
+	exit 0
+fi
 
 clear
 echo -e "\e[1;33m		                                        ____   "
@@ -178,5 +184,14 @@ echo -e "\e[1;33m                                     \`;..\`\`::::''..;'				"
 echo -e "\e[1;33m                                       \`\`::,,,,::''					"
 
 echo -e "\e[1;37mThe system needs to be rebooted"
-echo -e "\e[1;37m¿Do you want to reboot your system now?"
-sleep 5
+echo -e "\e[1;37m¿Do you want to reboot your system now? [Y,n]"
+read rb
+
+if [[ $rb -eq [Yy] ]]; then
+	echo -e "\e[1;32m\nRebooting the system...\n"
+	sleep 3
+	reboot
+else
+	echo -e "\e[1;32m\nFinishing the uninstall...\n"
+	sleep 3
+fi
