@@ -62,7 +62,7 @@ echo -e "\e[1;32m            /_/                   /___/                        
 echo -e "\e[1;33m\nPlease wait a few seconds...\n"
 sleep 5
 
-echo -e "\e[1;32m	- Removing Lightdm Configuration\n"
+echo -e "\e[1;35m	- Removing Lightdm Configuration\n"
 
 # Removing Lightdm Configuration
 sudo systemctl disable lightdm 2>/dev/null
@@ -72,7 +72,7 @@ sudo rm -r /etc/lightdm/
 USER=/home/$1
 
 sleep 3
-echo -e "\e[1;35m	- Changing to the Bash shell\n"
+echo -e "\e[1;36m	- Changing to the Bash shell\n"
 
 # Changing to the "Bash" shell
 sudo chsh -s /bin/bash $1 > /dev/null
@@ -88,16 +88,16 @@ echo -e "\e[1;32m/ /_/ / _ \\/ / _ \\(_-</ __/ _ \`/ / / / _ \\/ _ \`/ / ___/ __
 echo -e "\e[1;32m\\____/_//_/_/_//_/___/\\__/\\_,_/_/_/_/_//_/\\_, / /_/  /_/  \\___/\\_, /_/  \\_,_/_/_/_/___/"
 echo -e "\e[1;32m                                         /___/                /___/                    "
 
-echo -e "\e[1;36m\nLooking Programs to Uninstall\n"
+echo -e "\e[1;36m\nLooking Programs to Uninstall...\n"
 sleep 5
 
 # Uninstalling Programs
 sudo pacman -Rsn lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf exa fish
 
-echo -e "\e[1;32m\nIf you think you will use this installer again, select "no" to the following options"
-echo -e "\e[1;32mso as not to clear the cache of the programs. If you think you will not use the"
-echo -e "\e[1;32minstaller again, select "yes" to delete it.\n"
-
+echo -e "\e[1;33m\nIf you think you will use this installer again, select "no" to the following options"
+echo -e "\e[1;33mso as not to clear the cache of the programs. If you think you will not use the"
+echo -e "\e[1;33minstaller again, select "yes" to delete it."
+echo -e "\e[1;32m\n"
 # Cleaning Pacman Cache
 sudo pacman -Sc
 
@@ -119,32 +119,32 @@ echo -e "\e[1;32m                   /___/                                       
 echo -e "\e[1;33m\nBye Bye Configuration...\n"
 sleep 5
 
-echo -e "\e[1;33m	- Removing Config and Backgrounds Directories\n"
+echo -e "\e[1;31m	- Removing Config and Backgrounds Directories\n"
 sleep 3
 
-echo -e "\e[1;33m	- Removing Startup Configuration File\n"
+echo -e "\e[1;32m	- Removing Startup Configuration File\n"
 
 # Removing Config and Backgrounds Directories, also Startup Configuration File(.xsession) and Monitor Configuration Bash Script(.xrandr_monitor.sh)
 sudo rm -r $USER/.config $USER/backgrounds $USER/.xsession $USER/.xrandr_monitor.sh
 
 sleep 3
 
-echo -e "\e[1;33m	- Removing Rofi Theme\n"
+echo -e "\e[1;34m	- Removing Rofi Theme\n"
 
 # Removing Rofi Theme
 sudo rm /usr/share/rofi/themes/onedark.rasi
 
 sleep 3
 
-echo -e "\e[1;33m	- Removing Cursor\n"
+echo -e "\e[1;35m	- Removing Cursor\n"
 
 # Removing Black Theme and New Cursor
 # sudo rm -r /usr/share/themes/Material-Black-Blueberry/ /usr/share/icons/Material-Black-Blueberry-Suru/ $USER/gtkrc-2.0
-sudo rm -r /usr/share/icons/Breeze/ /usr/share/icons/default/Breeze/
+sudo rm -r /usr/share/icons/Breeze/ /usr/share/icons/default/index.theme
 
 sleep 3
 
-echo -e "\e[1;33m	- Removing Final Files...\n"
+echo -e "\e[1;36m	- Removing Final Files...\n"
 
 # Removing "Bash" Configuration File
 rm $USER/.bashrc
