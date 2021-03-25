@@ -25,10 +25,13 @@ sudo rm /usr/share/rofi/themes/onedark.rasi
 
 # Removing Black Theme and New Cursor
 # sudo rm -r /usr/share/themes/Material-Black-Blueberry/ /usr/share/icons/Material-Black-Blueberry-Suru/ $USER/gtkrc-2.0
-sudo rm -r /usr/share/icons/Breeze/ /usr/share/icons/default/*
+sudo rm -r /usr/share/icons/Breeze/ /usr/share/icons/default/Breeze/
 
 # Removing "Bash" Configuration File
 rm $USER/.bashrc
+
+# Cleaning Pacman Cache
+sudo pacman -Sc
 
 # Saying that the Uninstall has Finished
 echo -e "\n\nUninstalation Completed :D\n\n"

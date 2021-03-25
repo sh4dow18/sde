@@ -89,7 +89,7 @@ USER=/home/$1
 
 echo -e "\e[1;31m\n	- Installing Lightdm Configuration"
 sudo cp settings/lightdm/lightdm.conf /etc/lightdm/
-sudo systemctl enable lightdm > /dev/null
+sudo systemctl enable lightdm 2> /dev/null
 
 # Creating Configuration Directory
 sudo mkdir $USER/.config
