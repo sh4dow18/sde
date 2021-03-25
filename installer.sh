@@ -94,6 +94,8 @@ sudo systemctl enable lightdm
 # Creating Configuration Directory
 sudo mkdir $USER/.config
 
+sleep 3
+
 echo -e "\e[1;32m\n	- Installing Qtile and Openbox Configuration"
 
 # Installing Qtile Configuration
@@ -103,10 +105,14 @@ cp -r settings/qtile $USER/.config/
 cp -r settings/OpenBox/RookieMode/openbox/ $USER/.config/
 cp -r settings/OpenBox/RookieMode/tint2/ $USER/.config/
 
+sleep 3
+
 echo -e "\e[1;33m\n	- Installing Alacritty Configuration"
 
 # Installing Alacritty Configuration
 sudo cp -r settings/alacritty $USER/.config/
+
+sleep 3
 
 echo -e "\e[1;34m\n	- Installing Rofi Configuration"
 
@@ -115,11 +121,15 @@ sudo cp settings/rofi/onedark.rasi /usr/share/rofi/themes/
 mkdir $USER/.config/rofi
 cp settings/rofi/config $USER/.config/rofi/
 
+sleep 3
+
 echo -e "\e[1;35m\n	- Installing Fish Configuration"
 
 # Changing to the "Fish" shell and Installing "Fish" Configuration
 sudo chsh -s /bin/fish $1
 cp -r settings/fish $USER/.config
+
+sleep 3
 
 echo -e "\e[1;36m\n	- Installing New Cursor"
 
@@ -127,6 +137,8 @@ echo -e "\e[1;36m\n	- Installing New Cursor"
 sudo tar -xf settings/gtk/cursor/Breeze.tar.gz
 sudo mv Breeze/ /usr/share/icons/
 sudo cp settings/gtk/cursor/index.theme /usr/share/icons/default/
+
+sleep 3
 
 echo -e "\e[1;36m\n	- Installing Startup Files"
 
@@ -137,6 +149,8 @@ sudo chmod u+x $USER/.xsession
 # Installing Monitor Configuration Bash Script
 cp settings/start/.xrandr_monitor.sh $USER/
 sudo chmod u+x $USER/.xrandr_monitor.sh
+
+sleep 3
 
 echo -e "\e[1;31m\n	- Installing Final Files..."
 
