@@ -12,11 +12,16 @@ echo -e "\e[1;33minstall the window manager with the settings\n"
 echo -e "\e[1;37mUsername:"
 read user
 
-cat /etc/passwd | grep $user
+verify=$(sudo cat /etc/passwd | grep $user | cut -d ':' -f 1)
 
-if [[ echo $? -eq 1 ]]; then
-	echo -e "\e[1;31mYou have entered an invalid user\n"
-	echo -e "\e[1;31mShutting Down the Installer\n"
-else:
-	echo -e "\e[1;32mYour username is $user\n"
+if [[ $verify == "root" ]]; then
+	echo -e "\e[1;31m\nThe installer can not use Root user"
+
+elif [[ $verify != $user ]]; then
+	echo -e "\e[1;31m\nYou have entered an invalid username"
+	echo -e "\e[1;31mShutting Down the Installer..."
+else
+	echo -e "\e[1;32m\n$user is a valid username"
 fi
+
+echo -e "\e[1;37m                  "
