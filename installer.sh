@@ -161,7 +161,7 @@ sleep 3
 echo -e "\e[1;35m\n	- Installing Fish Configuration"
 
 # Changing to the "Fish" shell and Installing "Fish" Configuration
-sudo chsh -s /bin/fish $1 > /dev/null
+sudo chsh -s /bin/fish $user > /dev/null
 cp -r settings/fish $USER/.config
 
 sleep 3
@@ -211,14 +211,14 @@ cp settings/start/.bashrc $USER/
 # cp settings/gtk/install/settings.ini $USER/.config/gtk-3.0/
 
 # Changing the new files owner
-sudo chown -R $1:$1 $USER/.config
-sudo chown -R $1:$1 $USER/backgrounds
-sudo chown $1:$1 $USER/.xsession
-sudo chown $1:$1 $USER/.xrandr_monitor.sh
-# sudo chown -R $1:$1 /usr/share/themes/Material-Black-Blueberry/
-# sudo chown -R $1:$1 /usr/share/icons/Material-Black-Blueberry-Suru/
-# sudo chown $1:$1 $USER/gtkrc-2.0
-sudo chown $1:$1 /usr/share/rofi/themes/onedark.rasi
+sudo chown -R $user:$user $USER/.config
+sudo chown -R $user:$user $USER/backgrounds
+sudo chown $user:$user $USER/.xsession
+sudo chown $user:$user $USER/.xrandr_monitor.sh
+# sudo chown -R $user:$user /usr/share/themes/Material-Black-Blueberry/
+# sudo chown -R $user:$user /usr/share/icons/Material-Black-Blueberry-Suru/
+# sudo chown $user:$user $USER/gtkrc-2.0
+sudo chown $user:$user /usr/share/rofi/themes/onedark.rasi
 
 sleep 3
 
@@ -251,6 +251,6 @@ if [[ $rb == [yY] ]]; then
 	reboot
 else
 	echo -e "\e[1;32m\nFinishing the install..."
-	echo -e "\e[1;37m\                "
+	echo -e "\e[1;37m                "
 	sleep 3
 fi
