@@ -82,7 +82,7 @@ permission for a command that need it. For Example:
 sudo pacman -R nano
 ```
 
-Later, you can create a new user (<username> refers to the name of the
+Later, you can create a new user ("username" refers to the name of the
 user you are creating. You should not put the "<>"):
 
 ```bash
@@ -92,6 +92,7 @@ usermod -aG wheel,audio,video,storage <username>
 ```
 
 Now the user is created and can use the command "sudo" without problems.
+Also, the user can use audio, can see videos and can save files.
 
 Finally, you must exit the root in "/mnt", unmount "/mnt" recursively
 and reboot your system.
@@ -102,9 +103,10 @@ umount -R /mnt
 reboot
 ```
 
-If you have a Laptop, after reboot and enter in your system, you will
-put(<device> refers to the wireless interface that you have. Normally
-is "wlan0". You should not put the "<>"):
+If you have a Laptop, All-in-One Computer or you use wireless connection,
+after reboot and enter in your system, you will put("device" refers to the
+wireless interface that you have. Normally is "wlan0". You should not put
+the "<>"):
 
 ```bash
 nmcli <device> wifi list
@@ -121,8 +123,8 @@ ip link
 
 This command show you the interfaces that you have in your system.
 
-To access to an access point put (<SSID> refers to a name of the access
-point. <password> refers to the password of the access point. You should not
+To access to an access point put ("SSID" refers to a name of the access
+point. "password" refers to the password of the access point. You should not
 put the "<>"):
 
 ```bash
