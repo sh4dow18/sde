@@ -179,7 +179,8 @@ sleep 3
 echo -e "\e[1;31m\n	- Installing Startup Files"
 
 # Installing Startup Configuration File (.xsession)
-cp settings/start/.xsession $USER/
+cp settings/start/vmware.xsession $USER/
+mv $USER/vmware.xsession $USER/.xsession
 sudo chmod u+x $USER/.xsession
 
 sleep 3
