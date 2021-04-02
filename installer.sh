@@ -211,7 +211,6 @@ cp settings/start/.bashrc $USER/
 sudo chown -R $user:$user $USER/.config
 sudo chown -R $user:$user $USER/backgrounds
 sudo chown $user:$user $USER/.xsession
-sudo chown $user:$user $USER/.xrandr_monitor.sh
 # sudo chown -R $user:$user /usr/share/themes/Material-Black-Blueberry/
 # sudo chown -R $user:$user /usr/share/icons/Material-Black-Blueberry-Suru/
 # sudo chown $user:$user $USER/gtkrc-2.0
