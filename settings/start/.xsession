@@ -34,12 +34,10 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 	unset f
 fi
 
-# Searching User Monitor with a Variable and a Bash Script
-userMonitor=$(./.xrandr_monitor.sh)
+xrandr --output Virtual1 --primary --mode 1440x900
 
 # Start Subprocesses
 setxkbmap es &
 picom &
 udiskie -t &
-xrandr --output $userMonitor --primary --mode preferred
 feh --bg-scale ~/backgrounds/Thanks.png &

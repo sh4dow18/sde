@@ -100,7 +100,7 @@ echo -e "\e[1;36m\n\nLooking for the Necessary Programs...\n"
 sleep 5
 
 # Installing Programs
-sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf exa fish
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf exa fish gtkmm open-vm-tools xf86-video-vmware xf86-input-vmmouse
 
 echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 4
@@ -181,10 +181,6 @@ echo -e "\e[1;31m\n	- Installing Startup Files"
 # Installing Startup Configuration File (.xsession)
 cp settings/start/.xsession $USER/
 sudo chmod u+x $USER/.xsession
-
-# Installing Monitor Configuration Bash Script
-cp settings/start/.xrandr_monitor.sh $USER/
-sudo chmod u+x $USER/.xrandr_monitor.sh
 
 sleep 3
 
