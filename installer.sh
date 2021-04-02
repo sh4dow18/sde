@@ -74,6 +74,37 @@ echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 4
 
 clear
+echo -e "\e[1;32m   __            __    ___      __       _ __  "
+echo -e "\e[1;32m  / /  ___ ____ / /_  / _ \\___ / /____ _(_) /__"
+echo -e "\e[1;32m / /__/ _ \`(_-</ __/ / // / -_) __/ _ \`/ / (_-<"
+echo -e "\e[1;32m/____/\\_,_/___/\\__/ /____/\\__/\\__/\\_,_/_/_/___/"
+
+echo -e "\e[1;33m\n\nAnswer the Next Question before start the Installation...\n"
+
+echo -e "\e[1;32mIn which device are you running this Installer?(Answer with the option number)\n"
+echo -e "\e[1;36m	1- PC with HDMI"
+echo -e "\e[1;36m	2- Laptop or All in One"
+echo -e "\e[1;36m	3- VMware"
+echo -e "\e[1;32m\nYour Answer:"
+read option
+
+if [[ option -eq 1 ]]; then
+	DEVICE="hdmi"
+else if [[ option -eq 2 ]]; then
+	DEVICE="laptop"
+else if [[ option -eq 3 ]]; then
+	DEVICE="vmware"
+else
+	echo -e "\e[1;31mYou did not choose a correct option\n"
+	echo -e "\e[1;31mShutting Down the Installer..."
+	echo -e "\e[1;37m                  "
+	sleep 2
+	exit 1
+fi
+
+sleep 4
+
+clear
 echo -e "\e[1;32m   ____         __       _____             __  __        __     __        "
 echo -e "\e[1;32m  /  _/__  ___ / /____ _/ / (_)__  ___ _  / / / /__  ___/ /__ _/ /____ ___"
 echo -e "\e[1;32m _/ // _ \\(_-</ __/ _ \`/ / / / _ \\/ _ \`/ / /_/ / _ \\/ _  / _ \`/ __/ -_|_-<"
@@ -116,7 +147,7 @@ echo -e "\e[1;32m/ /__/ _ \\/ _ \\/ _/ / _ \`/ // / __/ _ \`/ __/ / _ \\/ _ \\  
 echo -e "\e[1;32m\\___/\\___/_//_/_//_/\\_, /\\_,_/_/  \\_,_/\\__/_/\\___/_//_/ /_/ /_/_/\\__/___/"
 echo -e "\e[1;32m                   /___/                                                 "
 
-echo -e "\e[1;33m\n\nAdding Configuration..."
+echo -e "\e[1;36m\n\nAdding Configuration..."
 sleep 5
 
 # Creating User Home's Variable
@@ -166,7 +197,26 @@ cp -r settings/fish $USER/.config
 
 sleep 3
 
-echo -e "\e[1;36m\n	- Installing New Cursor"
+echo -e "\e[1;31m\n	- Installing Black Themes"
+
+# Installing Black Theme for Qtile
+sudo unzip settings/gtk/theme/Material-Black-Blueberry.zip
+sudo unzip settings/gtk/icons/Material-Black-Blueberry-Suru.zip
+sudo cp -r Material-Black-Blueberry/ /usr/share/themes/
+sudo rm -r Material-Black-Blueberry/
+sudo mv Material-Black-Blueberry-Suru/ /usr/share/icons/
+cp settings/gtk/install/gtkrc-2.0 $USER/
+mkdir $USER/.config/gtk-3.0
+cp settings/gtk/install/settings.ini $USER/.config/gtk-3.0/
+
+# Installing Black Theme for OpenBox
+sudo unzip settings/gtk/theme/Arc-Dark.zip
+sudo cp -r Arc-Dark/ /usr/share/themes/
+sudo rm -r Arc-Dark/
+
+sleep 3
+
+echo -e "\e[1;31m\n	- Installing Cursor"
 
 # Installing New Cursor
 sudo tar -xf settings/gtk/cursor/Breeze.tar.gz
@@ -176,16 +226,16 @@ sudo cp settings/gtk/cursor/index.theme /usr/share/icons/default/
 
 sleep 3
 
-echo -e "\e[1;31m\n	- Installing Startup Files"
+echo -e "\e[1;32m\n	- Installing Startup Files"
 
 # Installing Startup Configuration File (.xsession)
-cp settings/start/vmware.xsession $USER/
-mv $USER/vmware.xsession $USER/.xsession
+cp settings/start/$DEVICE.xsession $USER/
+mv $USER/$DEVICE.xsession $USER/.xsession
 sudo chmod u+x $USER/.xsession
 
 sleep 3
 
-echo -e "\e[1;32m\n	- Installing Final Files..."
+echo -e "\e[1;33m\n	- Installing Final Files..."
 
 # Creating Backgrounds Directory
 sudo mkdir $USER/backgrounds
@@ -195,17 +245,6 @@ cp settings/start/Thanks.png $USER/backgrounds/
 
 # Installing Bash Configuation File
 cp settings/start/.bashrc $USER/
-
-# Installing Black Theme
-# sudo unzip settings/gtk/theme/Material-Black-Blueberry.zip
-# sudo unzip settings/gtk/icons/Material-Black-Blueberry-Suru.zip
-# sudo rm -r /usr/share/themes/*
-# sudo cp -r Material-Black-Blueberry/ /usr/share/themes/
-# sudo rm -r Material-Black-Blueberry/
-# sudo mv Material-Black-Blueberry-Suru/ /usr/share/icons/
-# cp settings/gtk/install/gtkrc-2.0 $USER/
-# mkdir $USER/.config/gtk-3.0
-# cp settings/gtk/install/settings.ini $USER/.config/gtk-3.0/
 
 # Changing the new files owner
 sudo chown -R $user:$user $USER/.config
