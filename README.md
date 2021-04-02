@@ -1,14 +1,10 @@
 # Sh4dow's Window Manager Installer (SWM)
 
-![Qtile](settings/readme/10_qtile.png)
-
-![QtileWindows](settings/readme/12_window_qtile.png)
-
-![OpenBoxWindows](settings/readme/13_window_openbox.png)
+![PRESENTATION](settings/readme/10_qtile.png)
 
 # Version
 
-Version: 1.0 Beta 1
+Version: **1.0 Beta 1**
 
 # Overview
 
@@ -38,7 +34,15 @@ making sure of two things:
 	- If several windows are opened, they will all be displayed at the
 	  same time according to certain rules (layouts).
 
+![WINDOWMANAGER](settings/readme/14_window_manager.png)
+
+If you want to know more about this, you can visit 
+**[this site](https://binary-coffee.dev/post/acerca-de-los-manejadores-de-ventanas-de-mosaico-tiling)**
+for more information
+
 # Arch Linux Installation
+
+![ARCH](settings/readme/15_arch.png)
 
 Arch Linux should run on any "x86_64"-compatible machine with a minimum of
 "512 MB" in "RAM". A basic installation should take less than "2 GB" of disk
@@ -156,6 +160,8 @@ Manager".
 
 # Using SWM
 
+![SWMLOGO](settings/readme/16_swm_logo.png)
+
 To use the "Sh4dow's Window Manager Installer" you need the program "git", that
 you can install with **pacman**:
 
@@ -183,7 +189,7 @@ sudo bash installer.sh
 
 # SWM Information
 
-"Sh4dow's Window Manager Installer" introduces himself first:
+**Sh4dow's Window Manager Installer** introduces himself first:
 
 ![SWM](settings/readme/01_swm.png)
 
