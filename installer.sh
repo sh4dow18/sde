@@ -95,7 +95,7 @@ elif [[ option -eq 2 ]]; then
 elif [[ option -eq 3 ]]; then
 	DEVICE="vmware"
 else
-	echo -e "\e[1;31mYou did not choose a correct option\n"
+	echo -e "\e[1;31m\nYou did not choose a correct option\n"
 	echo -e "\e[1;31mShutting Down the Installer..."
 	echo -e "\e[1;37m                  "
 	sleep 2
