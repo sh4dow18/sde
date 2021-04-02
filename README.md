@@ -1,5 +1,11 @@
 # Sh4dow's Window Manager Installer (SWM)
 
+![Qtile](settings/readme/10_qtile.png)
+
+![QtileWindows](settings/readme/12_window_qtile.png)
+
+![OpenBoxWindows](settings/readme/13_window_openbox.png)
+
 # Version
 
 Version: 1.0 Beta 1
@@ -175,4 +181,79 @@ Finally, to execute the installer, put:
 sudo bash installer.sh
 ```
 
-And follow the Instrucctions.
+# SWM Information
+
+"Sh4dow's Window Manager Installer" introduces himself first:
+
+![SWM](settings/readme/01_swm.png)
+
+Now, the program needs to verificate if a user exists to install the configuration
+files. The user's can not be any pre installed user, because, many of the
+configuration files needs to install in a user's home:
+
+![USER](settings/readme/02_user.png)
+
+Later, the program needs to have more details about your system that can not know,
+like if you are in a PC with HDMI connection on your monitor, or if you have an
+intergrate screen or if you are in a virtual machine. This is necesary, because,
+the program will configurate the screen in base to the screen that you have:
+
+![LAST](settings/readme/03_last.png)
+
+After that, the installation begins with the installation of system updates. This
+is because it is best if the system is updated to obtain the best performance from
+the programs that would be installed later:
+
+![UPDATES](settings/readme/04_updates.png)
+
+Followed, will be install the programs about window manager and extras for that one.
+You have to press "Enter" key, to access to all the packages that will install.
+
+![PROGRAMS1](settings/readme/05_programs1.png)
+
+Now, press "s" and "Enter" key to download and install all the necesary packages:
+
+![PROGRAMS2](settings/readme/06_programs2.png)
+
+After, the installer automatically will install all the configuration that was
+created previously:
+
+![CONFIG](settings/readme/07_config.png)
+
+Later, the installer, if this hasn't errors, tell you that the installation was
+finished and if you want to reboot now, because, the system need it for apply
+changes:
+
+![INSTALL](settings/readme/08_install.png)
+
+When you reboot your system, you will see the next window, obviously without the
+arrows.
+
+![LIGHTDM](settings/readme/09_lightdm.png)
+
+The green arrow points to the space you will put your user's password and the red
+arrow points to the space that you can touch and the program will show you a mini
+menu where you have the window managers installed that you can select.
+
+And tada! You have now a window manager pre configured that you can use freely.
+This is "Qtile", a window manager that has a filosofy that use many part of time
+the key bindigs. It is a "advance" window manager:
+
+![QTILE](settings/readme/10_qtile.png)
+
+If you want a window manager similar to "Windows", you have "Openbox", which was
+configured so that it does not use key bindings and uses traditional floating
+windows.
+
+![OPENBOX](settings/readme/11_openbox.png)
+
+IF you want to know how is the window management of both windows managers here are
+two examples:
+
+**Qtile**
+
+![WINDOWQTILE](settings/readme/12_window_qtile.png)
+
+**Openbox**
+
+![WINDOWOPENBOX](settings/readme/12_window_openbox.png)
