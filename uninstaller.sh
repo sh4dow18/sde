@@ -167,7 +167,7 @@ sleep 3
 echo -e "\e[1;32m	- Removing Startup Configuration File\n"
 
 # Removing Config and Backgrounds Directories, also Startup Configuration File(.xsession) and Monitor Configuration Bash Script(.xrandr_monitor.sh)
-sudo rm -r $USER/.config $USER/backgrounds $USER/.xsession $USER/.xrandr_monitor.sh
+sudo rm -r $USER/.config $USER/backgrounds $USER/.xsession
 
 sleep 3
 
