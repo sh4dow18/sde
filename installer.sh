@@ -85,14 +85,14 @@ echo -e "\e[1;32mIn which device are you running this Installer?(Answer with the
 echo -e "\e[1;36m	1- PC with HDMI"
 echo -e "\e[1;36m	2- Laptop or All in One"
 echo -e "\e[1;36m	3- VMware"
-echo -e "\e[1;32m\nYour Answer:"
+echo -e "\e[1;37m\nYour Answer:"
 read option
 
 if [[ option -eq 1 ]]; then
 	DEVICE="hdmi"
-else if [[ option -eq 2 ]]; then
+elif [[ option -eq 2 ]]; then
 	DEVICE="laptop"
-else if [[ option -eq 3 ]]; then
+elif [[ option -eq 3 ]]; then
 	DEVICE="vmware"
 else
 	echo -e "\e[1;31mYou did not choose a correct option\n"
@@ -102,6 +102,7 @@ else
 	exit 1
 fi
 
+echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 4
 
 clear
@@ -200,8 +201,8 @@ sleep 3
 echo -e "\e[1;31m\n	- Installing Black Themes"
 
 # Installing Black Theme for Qtile
-sudo unzip settings/gtk/theme/Material-Black-Blueberry.zip
-sudo unzip settings/gtk/icons/Material-Black-Blueberry-Suru.zip
+sudo unzip settings/gtk/theme/Material-Black-Blueberry.zip > /dev/null
+sudo unzip settings/gtk/icons/Material-Black-Blueberry-Suru.zip > /dev/null
 sudo cp -r Material-Black-Blueberry/ /usr/share/themes/
 sudo rm -r Material-Black-Blueberry/
 sudo mv Material-Black-Blueberry-Suru/ /usr/share/icons/
@@ -210,13 +211,13 @@ mkdir $USER/.config/gtk-3.0
 cp settings/gtk/install/settings.ini $USER/.config/gtk-3.0/
 
 # Installing Black Theme for OpenBox
-sudo unzip settings/gtk/theme/Arc-Dark.zip
+sudo unzip settings/gtk/theme/Arc-Dark.zip > /dev/null
 sudo cp -r Arc-Dark/ /usr/share/themes/
 sudo rm -r Arc-Dark/
 
 sleep 3
 
-echo -e "\e[1;31m\n	- Installing Cursor"
+echo -e "\e[1;32m\n	- Installing Cursor"
 
 # Installing New Cursor
 sudo tar -xf settings/gtk/cursor/Breeze.tar.gz
@@ -226,7 +227,7 @@ sudo cp settings/gtk/cursor/index.theme /usr/share/icons/default/
 
 sleep 3
 
-echo -e "\e[1;32m\n	- Installing Startup Files"
+echo -e "\e[1;33m\n	- Installing Startup Files"
 
 # Installing Startup Configuration File (.xsession)
 cp settings/start/$DEVICE.xsession $USER/
@@ -235,7 +236,7 @@ sudo chmod u+x $USER/.xsession
 
 sleep 3
 
-echo -e "\e[1;33m\n	- Installing Final Files..."
+echo -e "\e[1;34m\n	- Installing Final Files..."
 
 # Creating Backgrounds Directory
 sudo mkdir $USER/backgrounds

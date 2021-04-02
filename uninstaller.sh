@@ -135,9 +135,9 @@ sleep 5
 # Uninstalling Programs
 sudo pacman -Rsn lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf exa fish gtkmm open-vm-tools xf86-video-vmware xf86-input-vmmouse
 
-echo -e "\e[1;33m\nIf you think you will use this installer again, select "no" to the following options"
+echo -e "\e[1;33m\nIf you think you will use this installer again, select "n" to the following options"
 echo -e "\e[1;33mso as not to clear the cache of the programs. If you think you will not use the"
-echo -e "\e[1;33minstaller again, select "yes" to delete it."
+echo -e "\e[1;33minstaller again, select "y" to delete it."
 echo -e "\e[1;32m                 "
 
 # Cleaning Pacman Cache
