@@ -14,7 +14,8 @@ echo -e "\e[1;33m\nYou will run the uninstaller. Are you sure? [Y,n]"
 read option
 
 if [[ $option == [nN] ]]; then
-	echo -e "\e[1;31m\nShutting down the uninstaller...\n"
+	echo -e "\e[1;31m\nShutting down the uninstaller..."
+	echo -e "\e[1;37m                       "
 	sleep 3
 	exit 0
 fi
