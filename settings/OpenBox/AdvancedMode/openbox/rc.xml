@@ -120,13 +120,10 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>1</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>WWW</name>
-      <name>DEV</name>
-      <name>TERM</name>
-      <name>MISC</name>
+      <name>WINDOWS</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -179,7 +176,7 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
-    <keybind key="C-A-Left">
+    <!-- <keybind key="C-A-Left">
       <action name="GoToDesktop">
         <to>left</to>
         <wrap>no</wrap>
@@ -196,18 +193,18 @@
         <to>left</to>
         <wrap>no</wrap>
       </action>
-    </keybind>
-    <keybind key="S-A-Right">
+    </keybind> -->
+    <!-- <keybind key="S-A-Right">
       <action name="SendToDesktop">
         <to>right</to>
         <wrap>no</wrap>
       </action>
-    </keybind>
+    </keybind> -->
 
     <!-- Custom Keybindings  -->
 
     <!-- Switch Workspaces -->
-    <keybind key="W-1">
+    <!-- <keybind key="W-1">
       <action name="GoToDesktop">
         <to>1</to>
       </action>
@@ -229,10 +226,10 @@
     </keybind>
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
-    </keybind>
+    </keybind> -->
 
     <!-- Send Window to Workspace N -->
-    <keybind key="W-S-1">
+    <!-- <keybind key="W-S-1">
       <action name="SendToDesktop">
         <to>1</to>
         <wrap>no</wrap>
@@ -249,19 +246,19 @@
         <to>3</to>
         <wrap>no</wrap>
       </action>
-    </keybind>
-    <keybind key="W-S-4">
+    </keybind> -->
+    <!-- <keybind key="W-S-4">
       <action name="SendToDesktop">
         <to>4</to>
         <wrap>no</wrap>
       </action>
-    </keybind>
+    </keybind> -->
 
     <!-- Close Window -->
-    <keybind key="W-w">
+    <!-- <keybind key="W-w">
       <action name="Close"/>
     </keybind>
-    <!-- <keybind key="A-Escape">
+    <keybind key="A-Escape">
       <action name="Lower"/>
       <action name="FocusToBottom"/>
       <action name="Unfocus"/>
@@ -281,7 +278,7 @@
         </finalactions>
       </action>
     </keybind>
-    <keybind key="W-k">
+    <!-- <keybind key="W-k">
       <action name="PreviousWindow">
         <finalactions>
           <action name="Focus"/>
@@ -289,7 +286,7 @@
           <action name="Unshade"/>
         </finalactions>
       </action>
-    </keybind>
+    </keybind> -->
     <!-- <keybind key="C-A-Tab">
       <action name="NextWindow">
         <panels>yes</panels>
@@ -404,7 +401,7 @@
     <!-- Keybindings for running applications -->
 
     <!-- Menu  -->
-    <keybind key="W-z">
+    <!-- <keybind key="W-z">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -412,7 +409,7 @@
         </startupnotify>
         <command>rofi -show run</command>
       </action>
-    </keybind>
+    </keybind> -->
     <!-- <keybind key="W-S-m">
       <action name="Execute">
         <startupnotify>
@@ -424,7 +421,7 @@
     </keybind> -->
 
     <!-- Browser -->
-    <keybind key="W-f">
+    <!-- <keybind key="W-f">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -432,10 +429,10 @@
         </startupnotify>
         <command>firefox</command>
       </action>
-    </keybind>
+    </keybind> -->
 
     <!-- File Manager -->
-    <keybind key="W-t">
+    <!-- <keybind key="W-t">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -443,7 +440,7 @@
         </startupnotify>
         <command>thunar</command>
       </action>
-    </keybind>
+    </keybind> -->
 
     <!-- Redshift -->
     <!-- <keybind key="W-r">
@@ -817,17 +814,17 @@
        just don't make menu ids clash or, well, it'll be kind of pointless -->
     <!-- default menu file (or custom one in $HOME/.config/openbox/) -->
     <file>menu.xml</file>
-    <hideDelay>200</hideDelay>
+    <hideDelay>0</hideDelay>
     <!-- if a press-release lasts longer than this setting (in milliseconds), the
        menu is hidden again -->
     <middle>no</middle>
     <!-- center submenus vertically about the parent entry -->
-    <submenuShowDelay>100</submenuShowDelay>
+    <submenuShowDelay>0</submenuShowDelay>
     <!-- time to delay before showing a submenu after hovering over the parent
        entry.
        if this is a negative value, then the delay is infinite and the
        submenu will not be shown until it is clicked on -->
-    <submenuHideDelay>400</submenuHideDelay>
+    <submenuHideDelay>0</submenuHideDelay>
     <!-- time to delay before hiding a submenu when selecting another
        entry in parent menu
        if this is a negative value, then the delay is infinite and the

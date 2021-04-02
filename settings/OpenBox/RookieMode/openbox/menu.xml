@@ -77,7 +77,6 @@
     </action>
   </item> -->
 </menu>
-
 <menu id="apps-fileman-menu" label="File Managers">
   <item label="Thunar">
     <action name="Execute">
@@ -88,7 +87,6 @@
     </action>
   </item>
 </menu>
-
 <!-- <menu id="apps-graphics-menu" label="Graphics">
   <item label="Gimp">
     <action name="Execute">
@@ -110,6 +108,31 @@
   <separator />
   <item label="Reconfigure Openbox">
     <action name="Reconfigure" />
+  </item>
+  <separator />
+  <item label="Change Theme">
+    <action name="Execute">
+      <command>lxappearance</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Change Wallpaper">
+    <action name="Execute">
+      <command>nitrogen</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Change Resolution">
+    <action name="Execute">
+      <command>arandr</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
   </item>
 </menu>
 
