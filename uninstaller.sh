@@ -178,11 +178,12 @@ sudo rm /usr/share/rofi/themes/onedark.rasi
 
 sleep 3
 
-echo -e "\e[1;35m	- Removing Cursor\n"
+echo -e "\e[1;35m	- Removing Black Themes and Cursor\n"
 
 # Removing Black Theme and New Cursor
-# sudo rm -r /usr/share/themes/Material-Black-Blueberry/ /usr/share/icons/Material-Black-Blueberry-Suru/ $USER/gtkrc-2.0
+sudo rm -r /usr/share/themes/Material-Black-Blueberry/ /usr/share/icons/Material-Black-Blueberry-Suru/ $USER/gtkrc-2.0
 sudo rm -r /usr/share/icons/Breeze/ # /usr/share/icons/default/index.theme
+sudo rm -r /usr/share/themes/Arc-Dark/
 
 sleep 3
 
