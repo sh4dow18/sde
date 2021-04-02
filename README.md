@@ -19,6 +19,19 @@ If you have a previous Arch Linux installation, I recommend you to backup
 your files and reinstall Arch Linux. This because, can be problems if it
 not is a clean installation.
 
+# What is a Window Manager?
+
+The window manager is the program that aims to allow the user to manage the
+size of the application windows on the screen.
+
+Tile window managers only focus on arranging the windows on the screen by
+making sure of two things:
+
+	- Each window will use all available space on the screen
+
+	- If several windows are opened, they will all be displayed at the
+	  same time according to certain rules (layouts).
+
 # Arch Linux Installation
 
 Arch Linux should run on any "x86_64"-compatible machine with a minimum of
