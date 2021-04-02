@@ -132,7 +132,7 @@ echo -e "\e[1;36m\n\nLooking for the Necessary Programs...\n"
 sleep 5
 
 # Installing Programs
-sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf exa fish gtkmm open-vm-tools xf86-video-vmware xf86-input-vmmouse
+sudo pacman -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings xorg-server qtile alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib openbox tint2 obconf exa fish gtkmm open-vm-tools xf86-video-vmware xf86-input-vmmouse lxappearance arandr nitrogen
 
 echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 4

@@ -40,4 +40,5 @@ xrandr --output Virtual1 --primary --mode 1440x900
 setxkbmap es &
 picom &
 udiskie -t &
+nm-applet &
 feh --bg-scale ~/backgrounds/Thanks.png &

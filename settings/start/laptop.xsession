@@ -40,4 +40,5 @@ xrandr --output eDP-1 --primary --mode preferred
 setxkbmap es &
 picom &
 udiskie -t &
+nm-applet &
 feh --bg-scale ~/backgrounds/Thanks.png &
