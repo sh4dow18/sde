@@ -147,3 +147,32 @@ nmcli <device> wifi connect <SSID> password <password>
 If you want to know, the command "nmcli" means "Network Manager Command Line
 Interface", that you install when did you install the package "Network
 Manager".
+
+# Using SWM
+
+To use the "Sh4dow's Window Manager Installer" you need the program "git", that
+you can install with **pacman**:
+
+```bash
+sudo pacman -S git
+```
+
+Later, you will clone this repository:
+
+```bash
+git clone https://github.com/sh4dow18/swm.git
+```
+
+Now, go to "swm" folder:
+
+```bash
+cd swm/
+```
+
+Finally, to execute the installer, put:
+
+```bash
+sudo bash installer.sh
+```
+
+And follow the Instrucctions.
