@@ -42,13 +42,13 @@ for more information
 
 # Warning!
 
-![WARNING](settings/readme/17_warning.png)
+![WARNING](settings/readme/17_warning.jpg)
 
 This installation will need at least of **3.5 GB** in your hard disk drive,
 **1.5 GB** for "Arch Linux" and the other "2 GB" for the window managers
 and their settings.
 
-![WARNING](settings/readme/17_warning.png)
+![WARNING](settings/readme/17_warning.jpg)
 
 # Arch Linux Installation
 
