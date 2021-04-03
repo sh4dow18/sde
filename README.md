@@ -40,6 +40,16 @@ If you want to know more about this, you can visit
 **[this site](https://binary-coffee.dev/post/acerca-de-los-manejadores-de-ventanas-de-mosaico-tiling)**
 for more information
 
+# Warning!
+
+![WARNING](settings/readme/17_warning.png)
+
+This installation will need at least of **3.5 GB** in your hard disk drive,
+**1.5 GB** for "Arch Linux" and the other "2 GB" for the window managers
+and their settings.
+
+![WARNING](settings/readme/17_warning.png)
+
 # Arch Linux Installation
 
 ![ARCH](settings/readme/15_arch.png)
@@ -253,7 +263,7 @@ windows.
 
 ![OPENBOX](settings/readme/11_openbox.png)
 
-IF you want to know how is the window management of both windows managers here are
+If you want to know how is the window management of both windows managers here are
 two examples:
 
 **Qtile**
@@ -262,4 +272,4 @@ two examples:
 
 **Openbox**
 
-![WINDOWOPENBOX](settings/readme/12_window_openbox.png)
+![WINDOWOPENBOX](settings/readme/13_window_openbox.png)
