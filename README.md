@@ -329,7 +329,7 @@ will be shown.
 
 | Theme          | Description             |
 | -------------- | ----------------------- |
-| Meterial Black | Black Theme for Qtile   |
+| Material Black | Black Theme for Qtile   |
 | Arc Dark       | Black Theme for Openbox |
 
 ## Key Bindings
@@ -369,4 +369,4 @@ will be shown.
 **Openbox** for this installer was configured to be similar to
 how a normal user use "Windows".
 
-Here ends the documentation for now. Have a Nice Day :D
+Here ends the documentation for now. Eat vegetables and have a Nice Day :D
