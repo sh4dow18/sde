@@ -41,4 +41,7 @@ setxkbmap es &
 picom &
 udiskie -t &
 nm-applet &
+pulseaudio &
+volumeicon &
+cbatticon &
 feh --bg-scale ~/backgrounds/Thanks.png &

@@ -195,7 +195,7 @@ Finally, to execute the installer, put:
 sudo bash installer.sh
 ```
 
-# SWM Information
+## SWM Information
 
 **Sh4dow's Window Manager Installer** introduces himself first:
 
@@ -271,3 +271,102 @@ two examples:
 **Openbox**
 
 ![WINDOWOPENBOX](settings/readme/13_window_openbox.png)
+
+# Do you want to know more? Read THIS :D
+
+Here, the software that was used in the installer will be shown in more depth. Also,
+the key bindings that are pre configured in window managers and installed themes
+will be shown.
+
+## Software
+
+| Package                      | Description                                 |
+| ---------------------------- | ------------------------------------------- |
+| lightdm                      | Login Manager                               |
+| lightdm-gtk-greeter          | **Lightdm** User Interface                  |
+| lightdm-gtk-greeter-settings | Settings for the **Lightdm** User Interface |
+| xorg-server                  | Graphic Controller                          |
+| qtile                        | Window Manager configured in *Python*       |
+| openbox                      | Window Manager configured in *XML*          |
+| alacritty                    | Terminal Emulator                           |
+| rofi                         | Program Launcher                            |
+| sed                          | Text parser and transformer                 |
+| which                        | Executable File Finder                      |
+| feh                          | Wallpaper Changer                           |
+| firefox                      | Browser                                     |
+| code                         | Code Text Editor                            |
+| picom                        | Compositor for **Xorg**                     |
+| gimp                         | Image Editor                                |
+| udiskie                      | Automounter of Removable Media              |
+| ntfs-3g                      | Stable NTFS Driver                          |
+| xorg-xrandr                  | Monitor Resolution Configurator             |
+| vlc                          | Video Visualizer and Audio Player           |
+| imv                          | Image Visualizer                            |
+| scrot                        | Screen Capturing Application                |
+| thunar                       | GUI File Manager                            |
+| zip                          | Files Compressor                            |
+| unzip                        | Files Decompressor                          |
+| xcb-util-cursor              | XCB Cursor Library                          |
+| pacman-contrib               | Program that has scripts for **pacman**     |
+| tint2                        | Tool Bar                                    |
+| obconf                       | Theme Changer for Openbox                   |
+| exa                          | Modern Replacement for **ls**               |
+| fish                         | Smart and user-friendly command line shell  |
+| gtkmm                        | Official C++ interface for GTK              |
+| open-vm-tools                | Set of services and modules for VMware      |
+| xf86-video-vmware            | VMware Video Driver                         |
+| xf86-input-vmmouse           | VMware Mouse Driver                         |
+| lxappearance                 | GUI Theme Changer                           |
+| arandr                       | GUI Monitor Resolution Changer              |
+| nitrogen                     | GUI Wallpaper Changer                       |
+| network-manager-applet       | **Network Manager** Systray                 |
+| pulseaudio                   | Sound Server                                |
+| volumeicon                   | Volume Control in Systray                   |
+| pavucontrol                  | GUI Sound Server                            |
+| cbatticon                    | Battery Icon for Systray                    |
+
+## Themes
+
+| Theme          | Description             |
+| -------------- | ----------------------- |
+| Meterial Black | Black Theme for Qtile   |
+| Arc Dark       | Black Theme for Openbox |
+
+## Key Bindings
+
+### Qtile
+
+| Key Binding     | Action                            |
+| --------------- | --------------------------------- |
+| Mod + h         | Move Window Focus to Left         |
+| Mod + l         | Move Window Focus to Right        |
+| Mod + j         | Move Window Focus to Down         |
+| Mod + k         | Move Window Focus to Up           |
+| Mod + Space     | Move Window Focus to Other Window |
+| Mod + Shift + h | Move Window to Left               |
+| Mod + Shift + l | Move Window to Right              |
+| Mod + Shift + j | Move Window to Down               |
+| Mod + Shift + k | Move Window to Up                 |
+| Mod + Enter     | Launch Alacritty                  |
+| Mod + Tab       | Change Layout                     |
+| Mod + w         | Kill Focused Window               |
+| Mod + Ctrl + r  | Restart Qtile                     |
+| Mod + Ctrl + q  | Quit Qtile                        |
+| Mod + z         | Launch Rofi Menu                  |
+| Mod + f         | Launch Firefox                    |
+| Mod + c         | Launch Visual Studio Code         |
+| Mod + g         | Launch Gimp                       |
+| Mod + s         | Make a Screenshot                 |
+| Mod + t         | Launch Thunar                     |
+
+### Openbox
+
+| Key Binding  | Action           |
+| ------------ | ---------------- |
+| Mod + Enter  | Launch Alacritty |
+
+**OpenBox** has much less key bindings than **Qtile**, because,
+**Openbox** for this installer was configured to be similar to
+how a normal user use "Windows".
+
+Here ends the documentation for now. Have a Nice Day :D
