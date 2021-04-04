@@ -195,9 +195,9 @@ Finally, to execute the installer, put:
 sudo bash installer.sh
 ```
 
-## SWM Information
+## SWM Installer Information
 
-**Sh4dow's Window Manager Installer** introduces himself first:
+**Sh4dow's Window Manager Installer** introduces itself first:
 
 ![SWM](settings/readme/01_swm.png)
 
@@ -272,6 +272,56 @@ two examples:
 
 ![WINDOWOPENBOX](settings/readme/13_window_openbox.png)
 
+## SWM Uninstaller Information
+
+To uninstall all the programs and the settings, first you need to go to
+another terminal (tty2), that you can use with the key binding 
+"Ctrl + Alt + F2":
+
+![TTY2](settings/readme/18_tty2.png)
+
+Now, you will go to the **swm/** directory and put
+
+```bash
+sudo bash uninstaller.sh
+```
+
+First, the uninstaller will alert you if you really want uninstall all.
+
+![WARNINGSWM](settings/readme/19_warning_swm.png)
+
+Then, the uninstaller introduce itself.
+
+![SWM1](settings/readme/01_swm.png)
+
+After that, exactly like the installer, will verificate if a valid user exists
+to install the configuration files.
+
+![USER1](settings/readme/02_user.png)
+
+Now, the uninstaller will prepare itself to uninstall the programs. This have
+to do it to do not create problems.
+
+![PREPARING](settings/readme/20_preparing.png)
+
+Later, the programs will uninstall
+
+![UNINSTALLING](settings/readme/21_uninstalling.png)
+
+Then, the uninstaller will ask you if you want to delete the pacman cache. This is
+because if you do not want to reinstall the window manager and the other programs,
+this one will delete the installed programs cache
+
+![CACHE](settings/readme/22_cache.png)
+
+Now, the uninstaller will remove all the configuration files that was installed.
+
+![REMOVING](settings/readme/23_removing.png)
+
+Finaly, the program need to reboot your system to apply changes.
+
+![UNINSTALL](settings/readme/24_uninstall.png)
+
 # Do you want to know more? Read THIS :D
 
 Here, the software that was used in the installer will be shown in more depth. Also,
@@ -320,8 +370,6 @@ will be shown.
 | arandr                       | GUI Monitor Resolution Changer              |
 | nitrogen                     | GUI Wallpaper Changer                       |
 | network-manager-applet       | **Network Manager** Systray                 |
-| alsa-utils                   | Has the configurator of the sound devices   |
-| volumeicon                   | Volume Control in Systray                   |
 | cbatticon                    | Battery Icon for Systray                    |
 
 ## Themes
@@ -364,7 +412,7 @@ will be shown.
 | ------------ | ---------------- |
 | Mod + Enter  | Launch Alacritty |
 
-**OpenBox** has much less key bindings than **Qtile**, because,
+**Openbox** has much less key bindings than **Qtile**, because,
 **Openbox** for this installer was configured to be similar to
 how a normal user use "Windows".
 
