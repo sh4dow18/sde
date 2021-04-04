@@ -320,9 +320,8 @@ will be shown.
 | arandr                       | GUI Monitor Resolution Changer              |
 | nitrogen                     | GUI Wallpaper Changer                       |
 | network-manager-applet       | **Network Manager** Systray                 |
-| pulseaudio                   | Sound Server                                |
+| alsa-utils                   | Has the configurator of the sound devices   |
 | volumeicon                   | Volume Control in Systray                   |
-| pavucontrol                  | GUI Sound Server                            |
 | cbatticon                    | Battery Icon for Systray                    |
 
 ## Themes
