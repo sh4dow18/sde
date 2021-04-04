@@ -66,7 +66,7 @@ echo -e "\e[1;32m/ /_/ (_-</ -_) __/  | |/ / -_) __/ / _/ / __/ _ \`/ __/ / _ \\
 echo -e "\e[1;32m\\____/___/\\__/_/     |___/\\__/_/ /_/_//_/\\__/\\_,_/\\__/_/\\___/_//_/"
 
 echo -e "\e[1;33m\nPlease Enter the name of the user to whom you want to"
-echo -e "\e[1;33minstall the window manager with the settings\n"
+echo -e "\e[1;33muninstall the window manager with the settings\n"
 
 echo -e "\e[1;37mUsername:"
 read user

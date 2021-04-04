@@ -297,7 +297,7 @@ Then, the uninstaller introduce itself.
 After that, exactly like the installer, will verificate if a valid user exists
 to install the configuration files.
 
-![USER1](settings/readme/02_user.png)
+![USER2](settings/readme/25_user2.png)
 
 Now, the uninstaller will prepare itself to uninstall the programs. This have
 to do it to do not create problems.
