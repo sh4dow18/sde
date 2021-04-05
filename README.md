@@ -372,6 +372,11 @@ will be shown.
 | network-manager-applet       | **Network Manager** Systray                 |
 | cbatticon                    | Battery Icon for Systray                    |
 
+PD: Do not exist a pre installed program that allows you to have audio. This is because, some programs
+did not work when they was installed and test. You can investigate for this type of programs if you
+want to have it. Soon than as posible, this installer will have a program that provides you audio and
+will works perfectly. 
+
 ### What the software do?
 
 The package **xorg-server** allow the system to use grafic user interfaces (GUI).
