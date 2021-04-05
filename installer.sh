@@ -256,9 +256,6 @@ sudo chown $user:$user $USER/.xsession
 # sudo chown $user:$user $USER/gtkrc-2.0
 sudo chown $user:$user /usr/share/rofi/themes/onedark.rasi
 
-# Adding to audio group
-sudo gpasswd -a $user audio
-
 sleep 3
 
 clear
