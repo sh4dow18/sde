@@ -407,8 +407,8 @@ from "Windows".
 
 **xorg-xrandr** allows the user to change the screen resolution.
 
-The packages **vlc** and **imv** are visualizers. **vlc** allows to watch videos and listen
-to music. **imv** allows to see images.
+The packages **vlc** and **imv** are GUI visualizers. **Vlc** allows to watch videos and listen
+to music. **Imv** allows to see images.
 
 The program **scrot** allows you to make screenshots and save them in the actual directory.
 
@@ -425,8 +425,8 @@ open window.
 updates if they exists.
 
 The packages **tint2** and **obconf** are for **Openbox** only. **Tint2** is a tool bar. This
-must install for *Openbox**, because **Openbox** do not have a toolbar include. **obconf** is
-a theme changer for **Openbox**.
+must install for **Openbox**, because **Openbox** do not have a toolbar include. **obconf** is
+a GUI theme changer for **Openbox**.
 
 The program **exa** is a **ls**, but pretty. This one has colors and more options. In the
 configuration, the installer "transforms" **exa** in **ls**, because you can use **exa** like
@@ -446,13 +446,15 @@ to "Arch Linux" to recognize that the system is running like a virtual machine a
 can be configurable in "VMware".
 
 The programs **lxappearance**, **arandr** and **nitrogen** make some of the system changes
-easier. **lxappearance** allows you to change the "GTK" theme if you what another theme. **arandr**
-allows the user to change the resolution with a "GUI". **nitrogen** helps the user to change the
-wallpaper with a grafic interface.
+easier. **Lxappearance** allows you to change the "GTK" theme if you what another theme. **Arandr**
+allows the user to change the resolution with a "GUI". **Nitrogen** helps the user to change the
+wallpaper with a grafic interface. You have to remember that all the changes that was make by
+these programs DO NOT be permanent. If you want that the changes be permanent you have to change
+the **.xsession** file that will install in your user home. 
 
 **network-manager-applet** and **cbatticon** are programs that will use in the system tray.
-**network-manager-applet** also known as **nm-applet**, helps to use the **Network Manager**
-in a easier mode with GUI. **cbatticon** show you a battery icon to know how much battery percentage
+**Network-manager-applet** also known as **nm-applet**, helps to use the **Network Manager**
+in a easier mode with GUI. **Cbatticon** show you a battery icon to know how much battery percentage
 has your computer, if you have a laptop or an All-in-One.
 
 ## Themes
