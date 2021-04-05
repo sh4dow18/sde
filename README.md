@@ -450,7 +450,7 @@ easier. **Lxappearance** allows you to change the "GTK" theme if you what anothe
 allows the user to change the resolution with a "GUI". **Nitrogen** helps the user to change the
 wallpaper with a grafic interface. You have to remember that all the changes that was make by
 these programs DO NOT be permanent. If you want that the changes be permanent you have to edit
-the **.xsession** file that will install in your user home. 
+the **.xsession** file that will install in your user's home. 
 
 **network-manager-applet** and **cbatticon** are programs that will use in the system tray.
 **Network-manager-applet** also known as **nm-applet**, helps to use the **Network Manager**
