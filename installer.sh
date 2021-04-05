@@ -52,8 +52,8 @@ read user
 
 verify=$(sudo cat /etc/passwd | grep $user | cut -d ':' -f 1)
 
-if [[ $verify == "root" ]]; then
-	echo -e "\e[1;31m\nThe installer can not use Root user"
+if [[ $verify == "root" || $verify == "bin" || $verify == "daemon" || $verify == "mail" || $verify == "ftp" || $verify == "http" || $verify == "nobody" || $verify == "dbus" || $verify == "systemd-journal-remote" || $verify == "systemd-network" || $verify == "systemd-resolve" || $verify == "systemd-timesync" || $verify == "systemd-coredump" || $verify == "uuidd" || $verify == "polkitd" || $verify == "git" ]]; then
+	echo -e "\e[1;31m\nThe installer can not use a pre installed user"
 	echo -e "\e[1;31mShutting Down the Installer..."
 	echo -e "\e[1;37m                  "
 	sleep 2
