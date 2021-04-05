@@ -189,6 +189,13 @@ Now, go to "swm" folder:
 cd swm/
 ```
 
+After that, is recommended that you install a version without errors. You can
+install the version **1.0** that no has problems with:
+
+```bash
+git checkout 4bb701e
+```
+
 Finally, to execute the installer, put:
 
 ```bash
