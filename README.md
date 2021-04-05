@@ -332,10 +332,10 @@ will be shown.
 
 | Package                      | Description                                 |
 | ---------------------------- | ------------------------------------------- |
+| xorg-server                  | Graphic Controller                          |
 | lightdm                      | Login Manager                               |
 | lightdm-gtk-greeter          | **Lightdm** User Interface                  |
 | lightdm-gtk-greeter-settings | Settings for the **Lightdm** User Interface |
-| xorg-server                  | Graphic Controller                          |
 | qtile                        | Window Manager configured in *Python*       |
 | openbox                      | Window Manager configured in *XML*          |
 | alacritty                    | Terminal Emulator                           |
@@ -359,7 +359,7 @@ will be shown.
 | xcb-util-cursor              | XCB Cursor Library                          |
 | pacman-contrib               | Program that has scripts for **pacman**     |
 | tint2                        | Tool Bar                                    |
-| obconf                       | Theme Changer for Openbox                   |
+| obconf                       | GUI Theme Changer for Openbox               |
 | exa                          | Modern Replacement for **ls**               |
 | fish                         | Smart and user-friendly command line shell  |
 | gtkmm                        | Official C++ interface for GTK              |
@@ -371,6 +371,89 @@ will be shown.
 | nitrogen                     | GUI Wallpaper Changer                       |
 | network-manager-applet       | **Network Manager** Systray                 |
 | cbatticon                    | Battery Icon for Systray                    |
+
+### What the software do?
+
+The package **xorg-server** allow the system to use grafic user interfaces (GUI).
+
+The programs **lightdm**, **lightdm-gtk-greeter** and **lightdm-gtk-greeter-settings**
+provide a login manager GUI with a theme.
+
+**qtile** and **openbox** are window managers that how explain before, they control how
+the windows will be use. **Qtile** has a tool bar included.
+
+The package **alacritty** allows the user to have a terminal emulator to execute
+commands.
+
+The program **rofi** is a GUI menu that can allow you to call any program installed in your
+system. **sed** and **which** are necessary to run **Rofi**.
+
+**feh** allow the system to have wallpapers.
+
+The package **firefox** is an open-source browser that allows you to navigate in internet.
+
+The program **code** is the package for **Visual Studio Code** and this is a code text
+editor to create your own programs.
+
+**picom** is a program that allows the system to alterate the windows to make transparency
+and other stuff.
+
+The package **gimp** is an open-source image editor. This one is like a **Adobe Photoshop**,
+but free :O
+
+The program **udiskie** allows the system to mount automatically removable devices. The
+program **ntfs-3g** help **udiskie** to mount external hard disk drives that was come
+from "Windows".
+
+**xorg-xrandr** allows the user to change the screen resolution.
+
+The packages **vlc** and **imv** are visualizers. **vlc** allows to watch videos and listen
+to music. **imv** allows to see images.
+
+The program **scrot** allows you to make screenshots and save them in the actual directory.
+
+**thunar** allows the system to have a file manager of GUI type that can manage better the
+files in your system.
+
+The packages **zip** and **unzip** allows the user to compress and decompress files and
+folders.
+
+The program **xcb-util-cursor** keeps the cursor theme on the screen without that exists an
+open window.
+
+**pacman-contrib** allows to have the command **checkupdates**. This one show you the system
+updates if they exists.
+
+The packages **tint2** and **obconf** are for **Openbox** only. **Tint2** is a tool bar. This
+must install for *Openbox**, because **Openbox** do not have a toolbar include. **obconf** is
+a theme changer for **Openbox**.
+
+The program **exa** is a **ls**, but pretty. This one has colors and more options. In the
+configuration, the installer "transforms" **exa** in **ls**, because you can use **exa** like
+**ls** command. For example:
+
+```bash
+ls /home/sh4dow18
+
+---> The output of "exa"
+```
+
+**fish** is a better shell than **bash**. **Fish** has an autocompleter, can you install plugins
+for it, has more help for the user, etc. **Fish** is more intuitive to the user.
+
+The packages **gtkmm**, **open-vm-tools**, **xf86-video-vmware** and **xf86-input-vmmouse** help
+to "Arch Linux" to recognize that the system is running like a virtual machine and this machine
+can be configurable in "VMware".
+
+The programs **lxappearance**, **arandr** and **nitrogen** make some of the system changes
+easier. **lxappearance** allows you to change the "GTK" theme if you what another theme. **arandr**
+allows the user to change the resolution with a "GUI". **nitrogen** helps the user to change the
+wallpaper with a grafic interface.
+
+**network-manager-applet** and **cbatticon** are programs that will use in the system tray.
+**network-manager-applet** also known as **nm-applet**, helps to use the **Network Manager**
+in a easier mode with GUI. **cbatticon** show you a battery icon to know how much battery percentage
+has your computer, if you have a laptop or an All-in-One.
 
 ## Themes
 
@@ -415,5 +498,7 @@ will be shown.
 **Openbox** has much less key bindings than **Qtile**, because,
 **Openbox** for this installer was configured to be similar to
 how a normal user use "Windows".
+
+# 
 
 Here ends the documentation for now. Eat vegetables and have a Nice Day :D
