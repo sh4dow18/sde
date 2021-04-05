@@ -4,7 +4,7 @@
 
 # Version
 
-Version: **1.0 Beta 1**
+Version: **1.0**
 
 # Overview
 

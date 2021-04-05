@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Version 1.0
+
 clear
 echo -e "\e[1;33m		                                        ____   "
 echo -e "\e[1;33m		    .--.--.              .---.        ,'  , \`." 
