@@ -4,7 +4,7 @@
 
 # Version
 
-Version: **1.0**
+Version: **1.1**
 
 # Overview
 
@@ -190,7 +190,7 @@ cd swm/
 ```
 
 After that, is recommended that you install a version without errors. You can
-install the version **1.0** that no has problems with:
+install the version **1.1** that no has problems with:
 
 ```bash
 git checkout 4bb701e
@@ -262,22 +262,11 @@ the key bindigs. It is a "advance" window manager:
 
 ![QTILE](settings/readme/10_qtile.png)
 
-If you want a window manager similar to "Windows", you have "Openbox", which was
-configured so that it does not use key bindings and uses traditional floating
-windows.
-
-![OPENBOX](settings/readme/11_openbox.png)
-
-If you want to know how is the window management of both windows managers here are
-two examples:
+If you want to know how is the window management of Qtile here is an example:
 
 **Qtile**
 
 ![WINDOWQTILE](settings/readme/12_window_qtile.png)
-
-**Openbox**
-
-![WINDOWOPENBOX](settings/readme/13_window_openbox.png)
 
 ## SWM Uninstaller Information
 
@@ -343,17 +332,14 @@ will be shown.
 | lightdm                      | Login Manager                               |
 | lightdm-gtk-greeter          | **Lightdm** User Interface                  |
 | lightdm-gtk-greeter-settings | Settings for the **Lightdm** User Interface |
-| qtile                        | Window Manager configured in *Python*       |
-| openbox                      | Window Manager configured in *XML*          |
+| pip                          | *Python* Package Manager                    |
+| qtile                        | Window manager configured in *Python*       |
 | alacritty                    | Terminal Emulator                           |
 | rofi                         | Program Launcher                            |
-| sed                          | Text parser and transformer                 |
-| which                        | Executable File Finder                      |
 | feh                          | Wallpaper Changer                           |
 | firefox                      | Browser                                     |
 | code                         | Code Text Editor                            |
 | picom                        | Compositor for **Xorg**                     |
-| gimp                         | Image Editor                                |
 | udiskie                      | Automounter of Removable Media              |
 | ntfs-3g                      | Stable NTFS Driver                          |
 | xorg-xrandr                  | Monitor Resolution Configurator             |
@@ -365,24 +351,12 @@ will be shown.
 | unzip                        | Files Decompressor                          |
 | xcb-util-cursor              | XCB Cursor Library                          |
 | pacman-contrib               | Program that has scripts for **pacman**     |
-| tint2                        | Tool Bar                                    |
-| obconf                       | GUI Theme Changer for Openbox               |
 | exa                          | Modern Replacement for **ls**               |
 | fish                         | Smart and user-friendly command line shell  |
-| gtkmm                        | Official C++ interface for GTK              |
-| open-vm-tools                | Set of services and modules for VMware      |
-| xf86-video-vmware            | VMware Video Driver                         |
-| xf86-input-vmmouse           | VMware Mouse Driver                         |
-| lxappearance                 | GUI Theme Changer                           |
-| arandr                       | GUI Monitor Resolution Changer              |
-| nitrogen                     | GUI Wallpaper Changer                       |
 | network-manager-applet       | **Network Manager** Systray                 |
 | cbatticon                    | Battery Icon for Systray                    |
-
-PD: Do not exist a pre installed program that allows you to have audio. This is because, some programs
-did not work when they was installed and test. You can investigate for this type of programs if you
-want to have it. Soon than as posible, this installer will have a program that provides you audio and
-will works perfectly. 
+| pulseaudio                   | Multiplatform Sound Server                  |
+| pavucontrol                  | Pulseaudio grafical tool                    |
 
 ### What the software do?
 
@@ -391,14 +365,14 @@ The package **xorg-server** allow the system to use grafic user interfaces (GUI)
 The programs **lightdm**, **lightdm-gtk-greeter** and **lightdm-gtk-greeter-settings**
 provide a login manager GUI with a theme.
 
-**qtile** and **openbox** are window managers that how explain before, they control how
-the windows will be use. **Qtile** has a tool bar included.
+**qtile** is a window manager that how explain before, control how the windows will be
+use. **Qtile** has a tool bar included.
 
 The package **alacritty** allows the user to have a terminal emulator to execute
 commands.
 
 The program **rofi** is a GUI menu that can allow you to call any program installed in your
-system. **sed** and **which** are necessary to run **Rofi**.
+system.
 
 **feh** allow the system to have wallpapers.
 
@@ -409,9 +383,6 @@ editor to create your own programs.
 
 **picom** is a program that allows the system to alterate the windows to make transparency
 and other stuff.
-
-The package **gimp** is an open-source image editor. This one is like a **Adobe Photoshop**,
-but free :O
 
 The program **udiskie** allows the system to mount automatically removable devices. The
 program **ntfs-3g** help **udiskie** to mount external hard disk drives that was come
@@ -436,10 +407,6 @@ open window.
 **pacman-contrib** allows to have the command **checkupdates**. This one show you the system
 updates if they exists.
 
-The packages **tint2** and **obconf** are for **Openbox** only. **Tint2** is a tool bar. This
-must install for **Openbox**, because **Openbox** do not have a toolbar include. **obconf** is
-a GUI theme changer for **Openbox**.
-
 The program **exa** is a **ls**, but pretty. This one has colors and more options. In the
 configuration, the installer "transforms" **exa** in **ls**, because you can use **exa** like
 **ls** command. For example:
@@ -453,28 +420,19 @@ ls /home/sh4dow18
 **fish** is a better shell than **bash**. **Fish** has an autocompleter, can you install plugins
 for it, has more help for the user, etc. **Fish** is more intuitive to the user.
 
-The packages **gtkmm**, **open-vm-tools**, **xf86-video-vmware** and **xf86-input-vmmouse** help
-to "Arch Linux" to recognize that the system is running like a virtual machine and this machine
-can be configurable in "VMware".
-
-The programs **lxappearance**, **arandr** and **nitrogen** make some of the system changes
-easier. **Lxappearance** allows you to change the "GTK" theme if you what another theme. **Arandr**
-allows the user to change the resolution with a "GUI". **Nitrogen** helps the user to change the
-wallpaper with a grafic interface. You have to remember that all the changes that was make by
-these programs DO NOT be permanent. If you want that the changes be permanent you have to edit
-the **.xsession** file that will install in your user's home. 
-
 **network-manager-applet** and **cbatticon** are programs that will use in the system tray.
 **Network-manager-applet** also known as **nm-applet**, helps to use the **Network Manager**
 in a easier mode with GUI. **Cbatticon** show you a battery icon to know how much battery percentage
 has your computer, if you have a laptop or an All-in-One.
+
+**pulseaudio** is a program that allows you to interpret digital sound to analog and vice versa.
+The **pavucontrol** program is the graphical manager of **pulseaudio**.
 
 ## Themes
 
 | Theme          | Description             |
 | -------------- | ----------------------- |
 | Material Black | Black Theme for Qtile   |
-| Arc Dark       | Black Theme for Openbox |
 
 ## Key Bindings
 
@@ -502,17 +460,5 @@ has your computer, if you have a laptop or an All-in-One.
 | Mod + g         | Launch Gimp                       |
 | Mod + s         | Make a Screenshot                 |
 | Mod + t         | Launch Thunar                     |
-
-### Openbox
-
-| Key Binding  | Action           |
-| ------------ | ---------------- |
-| Mod + Enter  | Launch Alacritty |
-
-**Openbox** has much less key bindings than **Qtile**, because,
-**Openbox** for this installer was configured to be similar to
-how a normal user use "Windows".
-
-# 
 
 Here ends the documentation for now. Eat vegetables and have a Nice Day :D

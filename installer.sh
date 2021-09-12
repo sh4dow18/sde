@@ -134,7 +134,10 @@ echo -e "\e[1;36m\n\nLooking for the Necessary Programs...\n"
 sleep 5
 
 # Installing Programs
-sudo pacman -S xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings qtile openbox alacritty rofi sed which feh firefox code picom gimp udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib tint2 obconf exa fish gtkmm open-vm-tools xf86-video-vmware xf86-input-vmmouse lxappearance arandr nitrogen network-manager-applet cbatticon
+sudo pacman -S xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip alacritty rofi feh firefox code picom udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib exa fish network-manager-applet cbatticon pulseaudio pavucontrol
+
+pip install qtile
+sudo cp /home/$user/.local/bin/qtile /bin
 
 echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 4
@@ -158,6 +161,7 @@ USER=/home/$user
 
 echo -e "\e[1;31m\n	- Installing Lightdm Configuration"
 sudo cp settings/lightdm/lightdm.conf /etc/lightdm/
+sudo mkdir /usr/share/xsessions 2> /dev/null
 sudo systemctl enable lightdm 2> /dev/null
 
 # Creating Configuration Directory
@@ -169,10 +173,7 @@ echo -e "\e[1;32m\n	- Installing Qtile and Openbox Configuration"
 
 # Installing Qtile Configuration
 cp -r settings/qtile $USER/.config/
-
-# Installing OpenBox Configuration
-cp -r settings/OpenBox/RookieMode/openbox/ $USER/.config/
-cp -r settings/OpenBox/RookieMode/tint2/ $USER/.config/
+sudo cp settings/qtile/qtile.desktop /usr/share/xsessions/
 
 sleep 3
 
@@ -196,7 +197,6 @@ echo -e "\e[1;35m\n	- Installing Fish Configuration"
 
 # Changing to the "Fish" shell and Installing "Fish" Configuration
 sudo chsh -s /bin/fish $user > /dev/null
-cp -r settings/fish $USER/.config
 
 sleep 3
 
@@ -211,11 +211,6 @@ sudo mv Material-Black-Blueberry-Suru/ /usr/share/icons/
 cp settings/gtk/install/gtkrc-2.0 $USER/
 mkdir $USER/.config/gtk-3.0
 cp settings/gtk/install/settings.ini $USER/.config/gtk-3.0/
-
-# Installing Black Theme for OpenBox
-sudo unzip settings/gtk/theme/Arc-Dark.zip > /dev/null
-sudo cp -r Arc-Dark/ /usr/share/themes/
-sudo rm -r Arc-Dark/
 
 sleep 3
 
