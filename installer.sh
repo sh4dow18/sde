@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Version 1.0
+# Version 1.1
 
 clear
 echo -e "\e[1;33m		                                        ____   "
@@ -135,11 +135,7 @@ sleep 5
 
 # Installing Programs
 sudo pacman -S xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip alacritty rofi feh firefox code picom udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib exa fish network-manager-applet cbatticon pulseaudio pavucontrol
-
-mkdir /home/$user/.local 2>/dev/null
-mkdir /home/$user/.local/qtile 2>dev/null
-sudo pip install --target=/home/$user/.local/qtile qtile
-sudo cp /home/$user/.local/qtile/bin/qtile /bin
+sudo pacman -U https://archive.archlinux.org/packages/q/qtile/qtile-0.18.0-1-x86_64.pkg.tar.zst
 
 echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 4
@@ -175,7 +171,6 @@ echo -e "\e[1;32m\n	- Installing Qtile Configuration"
 
 # Installing Qtile Configuration
 cp -r settings/qtile $USER/.config/
-sudo cp settings/qtile/qtile.desktop /usr/share/xsessions/
 
 sleep 3
 

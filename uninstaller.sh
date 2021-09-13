@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Version 1.0
+# Version 1.1
 
 clear
 echo -e "\e[1;31m          _______  _______  _       _________ _        _______    _ "
@@ -138,9 +138,7 @@ sleep 5
 
 # Uninstalling Programs
 
-sudo rm /bin/qtile
-sudo rm -r /home/$user/.local/qtile
-sudo pacman -Rsn xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip alacritty rofi feh firefox code picom udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib exa fish network-manager-applet cbatticon pulseaudio pavucontrol
+sudo pacman -Rsn xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip qtile alacritty rofi feh firefox code picom udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib exa fish network-manager-applet cbatticon pulseaudio pavucontrol
 
 echo -e "\e[1;33m\nIf you think you will use this installer again, select \"n\" to the following options"
 echo -e "\e[1;33mso as not to clear the cache of the programs. If you think you will not use the"

@@ -332,7 +332,7 @@ will be shown.
 | lightdm                      | Login Manager                               |
 | lightdm-gtk-greeter          | **Lightdm** User Interface                  |
 | lightdm-gtk-greeter-settings | Settings for the **Lightdm** User Interface |
-| pip                          | *Python* Package Manager                    |
+| python-pip                   | *Python3* Package Manager                   |
 | qtile                        | Window manager configured in *Python*       |
 | alacritty                    | Terminal Emulator                           |
 | rofi                         | Program Launcher                            |
@@ -364,6 +364,9 @@ The package **xorg-server** allow the system to use grafic user interfaces (GUI)
 
 The programs **lightdm**, **lightdm-gtk-greeter** and **lightdm-gtk-greeter-settings**
 provide a login manager GUI with a theme.
+
+The package **python-pip** is a package management system used to install and manage
+software packages written in *Python3*.
 
 **qtile** is a window manager that how explain before, control how the windows will be
 use. **Qtile** has a tool bar included.
