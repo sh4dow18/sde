@@ -5,7 +5,7 @@ if [[ $(xrandr | grep Virtual-1) != "" ]]; then
 	xrandr --addmode Virtual-1 "1920x1080_60.00"
 	xrandr --output Virtual-1 --primary --mode "1920x1080_60.00"
 fi
-picom &
 udiskie -t &
 nm-applet &
 feh --bg-scale ~/.wallpapers/default.jpg &
+qtile start

@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Sh4dow_Qtile
+Exec=/etc/X11/qtile
+Type=Application

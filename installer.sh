@@ -149,6 +149,9 @@ echo -e "\e[1;32m\n	- Installing Qtile Configuration"
 
 # Installing Qtile Configuration
 cp -r settings/qtile $HOME/.config/
+sudo mkdir /usr/share/xsessions
+sudo cp settings/start/qtile.desktop /usr/share/xsessions/
+sudo cp settings/start/qtile /etc/X11/
 
 sleep 3
 
