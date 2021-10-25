@@ -103,8 +103,11 @@ echo -e "\e[1;36m\n\nLooking for the Necessary Programs...\n"
 sleep 5
 
 # Installing Programs
-sudo pacman -S xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty picom vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib bat discord
-sudo pacman -U https://archive.archlinux.org/packages/q/qtile/qtile-0.18.0-1-x86_64.pkg.tar.zst
+sudo pacman -S xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib bat
+sudo pip install xcffib
+sudo pip install --no-cache-dir cairocffi
+sudo pip install dbus-next
+sudo pip install qtile
 
 echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 4
@@ -130,6 +133,8 @@ HOME=/home/$user
 sudo mkdir $HOME/.config
 
 echo -e "\e[1;35m\n	- Changing Fonts"
+mkdir $HOME/.local
+mkdir $HOME/.local/share
 cp -r settings/fonts/ $HOME/.local/share/
 fc-cache -f
 
@@ -222,6 +227,7 @@ sudo chown -R $user:$user /usr/share/themes/Material-Black-Blueberry/
 sudo chown -R $user:$user /usr/share/icons/Material-Black-Blueberry-Suru/
 sudo chown $user:$user $HOME/gtkrc-2.0
 sudo chown $user:$user /usr/share/rofi/themes/onedark.rasi
+sudo chown -R $user:$user $HOME/.local
 
 sleep 3
 
