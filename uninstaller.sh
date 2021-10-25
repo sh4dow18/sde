@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Version 1.1
+# Version 2.0
 
 clear
 echo -e "\e[1;31m          _______  _______  _       _________ _        _______    _ "
@@ -23,19 +23,19 @@ if [[ $option == [nN] ]]; then
 fi
 
 clear
-echo -e "\e[1;33m  .--.--.       ,---,        ,---,. "
-echo -e "\e[1;33m /  /    '.   .'  .' \`\\    ,'  .' | "
-echo -e "\e[1;33m|  :  /\`. / ,---.'     \\ ,---.'   | "
-echo -e "\e[1;33m;  |  |--\`  |   |  .\`\\  ||   |   .' "
-echo -e "\e[1;33m|  :  ;_    :   : |  '  |:   :  |-, "
-echo -e "\e[1;33m \\  \\    \`. |   ' '  ;  ::   |  ;/| "
-echo -e "\e[1;33m  \`----.   \'   | ;  .  ||   :   .' "
-echo -e "\e[1;33m  __ \\  \\  ||   | :  |  '|   |  |-, "
-echo -e "\e[1;33m /  /\`--'  /'   : | /  ; '   :  ;/| "
-echo -e "\e[1;33m'--'.     / |   | '\` ,/  |   |    \\ "
-echo -e "\e[1;33m  \`--'---'  ;   :  .'    |   :   .' "
-echo -e "\e[1;33m            |   ,.'      |   | ,'   "
-echo -e "\e[1;33m            '---'        \`----'     "
+echo -e "\e[1;33m		  .--.--.       ,---,        ,---,. "
+echo -e "\e[1;33m		 /  /    '.   .'  .' \`\\    ,'  .' | "
+echo -e "\e[1;33m		|  :  /\`. / ,---.'     \\ ,---.'   | "
+echo -e "\e[1;33m		;  |  |--\`  |   |  .\`\\  ||   |   .' "
+echo -e "\e[1;33m		|  :  ;_    :   : |  '  |:   :  |-, "
+echo -e "\e[1;33m		 \\  \\    \`. |   ' '  ;  ::   |  ;/| "
+echo -e "\e[1;33m		  \`----.   \'   | ;  .  ||   :   .' "
+echo -e "\e[1;33m		  __ \\  \\  ||   | :  |  '|   |  |-, "
+echo -e "\e[1;33m		 /  /\`--'  /'   : | /  ; '   :  ;/| "
+echo -e "\e[1;33m		'--'.     / |   | '\` ,/  |   |    \\ "
+echo -e "\e[1;33m		  \`--'---'  ;   :  .'    |   :   .' "
+echo -e "\e[1;33m		            |   ,.'      |   | ,'   "
+echo -e "\e[1;33m		            '---'        \`----'     "
 
 echo -e "\e[1;32m     _____                _           _   _"
 echo -e "\e[1;32m    / ____|              | |         | | | |            _" 
@@ -53,9 +53,9 @@ echo -e "\e[1;36m   _.____\`.  | .-. ||____   _|/ /'\`\\' |/ .'\`\\ \\[ \\ [ \\ 
 echo -e "\e[1;36m  | \\____) | | | | |    _| |_ | \__/  || \__. | \\ \\/\\ \\/ /_| |_ | (____) | "
 echo -e "\e[1;36m   \\______.'[___]|__]  |_____| '.__.;__]'.__.'   \\__/\\__/|_____|\`.______.' "
 
-echo -e "\e[1;32m\n\n  My Github where I will Create				My Gaming, Reactions and Computing"
-echo -e "\e[1:32m  more Tools for Different Areas			Spanish Youtube Channel:"
-echo -e "\e[1;33m  https://github.com/sh4dow18				https://youtube.com/c/RamgiD\n"
+echo -e "\e[1;32m\n\n  My Github where I will Create				My Computing Spanish"
+echo -e "\e[1:32m  more Tools for Different Areas			Youtube Channel:"
+echo -e "\e[1;33m  https://github.com/sh4dow18				Sh4dow18 Proyect\n"
 
 echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 5
@@ -74,10 +74,12 @@ read user
 
 verify=$(sudo cat /etc/passwd | grep $user | cut -d ':' -f 1)
 
-if [[ $verify == "root" || $verify == "bin" || $verify == "daemon" || $verify == "mail" || $verify == "ftp" || $verify == "http" || $verify == "nobody" || $verify == "dbus" || $verify == "systemd-journal-remote" || $verify == "systemd-network" || $verify == "systemd-resolve" || $verify == "systemd-timesync" || $verify == "systemd-coredump" || $verify == "uuidd" || $verify == "polkitd" || $verify == "git" ]]; then
+invalid_options="root bin daemon mail ftp http nobody dbus systemd-journal-remote systemd-network systemd-resolve systemd-timesync systemd-coredump uuidd polkitd git"
+
+if [[ $invalid_options =~ (^| )$verify($| ) ]]; then
 	echo -e "\e[1;31m\nThe installer can not use a pre installed user"
-	echo -e "\e[1;31mShutting Down the Installer..."
-	echo -e "\e[1;37m                  "
+	echo -e "\e[1;31mShutting Down the Installer"
+	echo -e "\e[1;37m		   "
 	sleep 2
 	exit 1
 
@@ -112,8 +114,8 @@ sudo systemctl disable lightdm 2>/dev/null
 sudo rm -r /etc/lightdm/
 sudo rm -r /usr/share/xsessions/
 
-# Creating User Home's Variable
-USER=/home/$user
+# Creating User Home Variable
+HOME=/home/$user
 
 sleep 3
 echo -e "\e[1;36m	- Changing to the Bash shell\n"
@@ -137,7 +139,7 @@ sleep 5
 
 # Uninstalling Programs
 
-sudo pacman -Rsn xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip qtile alacritty rofi feh firefox code picom udiskie ntfs-3g xorg-xrandr vlc imv scrot thunar zip unzip xcb-util-cursor pacman-contrib exa fish network-manager-applet cbatticon pulseaudio pavucontrol
+sudo pacman -Rsn xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty picom vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib qtile bat discord
 
 echo -e "\e[1;33m\nIf you think you will use this installer again, select \"n\" to the following options"
 echo -e "\e[1;33mso as not to clear the cache of the programs. If you think you will not use the"
@@ -171,7 +173,8 @@ sleep 3
 echo -e "\e[1;32m	- Removing Startup Configuration File\n"
 
 # Removing Config and Backgrounds Directories, also Startup Configuration File(.xsession) and Monitor Configuration Bash Script(.xrandr_monitor.sh)
-sudo rm -r $USER/.config $USER/backgrounds $USER/.xsession
+sudo rm -r $HOME/.config $HOME/.wallpapers $HOME/.xsession $HOME/.local/share/fonts
+fc-cache -f
 
 sleep 3
 
@@ -185,15 +188,15 @@ sleep 3
 echo -e "\e[1;35m	- Removing Black Themes and Cursor\n"
 
 # Removing Black Theme and New Cursor
-sudo rm -r /usr/share/themes/Material-Black-Blueberry/ /usr/share/icons/Material-Black-Blueberry-Suru/ $USER/gtkrc-2.0
-sudo rm -r /usr/share/icons/Breeze/ # /usr/share/icons/default/index.theme
+sudo rm -r /usr/share/themes/Material-Black-Blueberry/ /usr/share/icons/Material-Black-Blueberry-Suru/ $HOME/gtkrc-2.0
+sudo rm -r /usr/share/icons/Breeze/ /usr/share/icons/default/index.theme
 
 sleep 3
 
 echo -e "\e[1;36m	- Removing Final Files...\n"
 
 # Removing "Bash" Configuration File
-rm $USER/.bashrc
+rm $HOME/.bashrc
 
 sleep 3
 
