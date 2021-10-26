@@ -174,8 +174,7 @@ sleep 3
 echo -e "\e[1;32m	- Removing Qtile Files\n"
 
 # Removing Config, Wallpapers Directories and Qtile Files
-sudo rm -r $HOME/.config $HOME/.wallpapers $HOME/.local/share/fonts "/usr/share/xsessions/Sh4dow's Desktop Environment.desktop" /etc/X11/qtile
-fc-cache -f
+sudo rm -r $HOME/.config $HOME/.wallpapers $HOME/.local/share/fonts /etc/X11/qtile
 
 sleep 3
 
