@@ -139,7 +139,8 @@ sleep 5
 
 # Uninstalling Programs
 
-sudo pacman -Rsn xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty picom vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib qtile bat discord
+sudo pacman -Rsn xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib bat
+sudo rm /bin/qtile
 
 echo -e "\e[1;33m\nIf you think you will use this installer again, select \"n\" to the following options"
 echo -e "\e[1;33mso as not to clear the cache of the programs. If you think you will not use the"
@@ -170,10 +171,10 @@ sleep 5
 echo -e "\e[1;31m	- Removing Config and Backgrounds Directories\n"
 sleep 3
 
-echo -e "\e[1;32m	- Removing Startup Configuration File\n"
+echo -e "\e[1;32m	- Removing Qtile Files\n"
 
-# Removing Config and Backgrounds Directories, also Startup Configuration File(.xsession) and Monitor Configuration Bash Script(.xrandr_monitor.sh)
-sudo rm -r $HOME/.config $HOME/.wallpapers $HOME/.xsession $HOME/.local/share/fonts
+# Removing Config, Wallpapers Directories and Qtile Files
+sudo rm -r $HOME/.config $HOME/.wallpapers $HOME/.local/share/fonts /usr/share/xsessions/qtile.desktop /etc/X11/qtile
 fc-cache -f
 
 sleep 3
@@ -189,14 +190,7 @@ echo -e "\e[1;35m	- Removing Black Themes and Cursor\n"
 
 # Removing Black Theme and New Cursor
 sudo rm -r /usr/share/themes/Material-Black-Blueberry/ /usr/share/icons/Material-Black-Blueberry-Suru/ $HOME/gtkrc-2.0
-sudo rm -r /usr/share/icons/Breeze/ /usr/share/icons/default/index.theme
-
-sleep 3
-
-echo -e "\e[1;36m	- Removing Final Files...\n"
-
-# Removing "Bash" Configuration File
-rm $HOME/.bashrc
+sudo rm -r /usr/share/icons/Breeze/
 
 sleep 3
 

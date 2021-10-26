@@ -149,7 +149,6 @@ echo -e "\e[1;32m\n	- Installing Qtile Configuration"
 
 # Installing Qtile Configuration
 cp -r settings/qtile $HOME/.config/
-sudo mkdir /usr/share/xsessions
 sudo cp settings/start/qtile.desktop /usr/share/xsessions/
 sudo cp settings/start/qtile /etc/X11/
 
@@ -167,7 +166,7 @@ echo -e "\e[1;34m\n	- Installing Rofi Configuration"
 # Installing Rofi Menu Configuration
 sudo cp settings/rofi/onedark.rasi /usr/share/rofi/themes/
 mkdir $HOME/.config/rofi
-cp settings/rofi/config $HOME/.config/rofi/
+cp settings/rofi/config.rasi $HOME/.config/rofi/
 
 sleep 3
 
@@ -175,7 +174,8 @@ echo -e "\e[1;35m\n	- Installing Fish Configuration"
 
 # Changing to the "Fish" shell and Installing "Fish" Configuration
 sudo chsh -s /bin/fish $user > /dev/null
-cp -r settings/fish .config/
+mkdir $HOME/.config/fish
+cp settings/fish/config.fish $HOME/.config/fish
 
 sleep 3
 
@@ -203,24 +203,13 @@ sudo cp settings/gtk/cursor/index.theme /usr/share/icons/default/
 
 sleep 3
 
-echo -e "\e[1;33m\n	- Installing Startup Files"
-
-# Installing Startup Configuration File (.xsession)
-cp settings/start/.xsession $HOME/
-sudo chmod u+x $HOME/.xsession
-
-sleep 3
-
-echo -e "\e[1;34m\n	- Installing Final Files..."
+echo -e "\e[1;33m\n	- Installing Final Files..."
 
 # Creating Wallpapers Directory
 sudo mkdir $HOME/.wallpapers
 
 # Installing Default Wallpaper
 cp settings/start/default.jpg $HOME/.wallpapers/
-
-# Installing Bash Configuration File
-cp settings/start/.bashrc $HOME/
 
 # Changing the new files owner
 sudo chown -R $user:$user $HOME/.config
