@@ -66,7 +66,7 @@ echo -e "\e[1;36m\n\nLooking for the Necessary Programs...\n"
 sleep 5
 
 # Installing Programs
-sudo pacman -S xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib bat
+sudo pacman -S --noconfirm xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib bat
 sudo pip install xcffib
 sudo pip install --no-cache-dir cairocffi
 sudo pip install dbus-next

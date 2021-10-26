@@ -107,7 +107,7 @@ sudo pip uninstall qtile -y
 sudo pip uninstall dbus-next -y
 sudo pip uninstall cairocffi -y
 sudo pip uninstall xcffib -y
-sudo pacman -Rsn xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib bat
+sudo pacman -Rsn --noconfirm xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib bat
 
 echo -e "\e[1;33m\nIf you think you will use this installer again, select \"n\" to the following options"
 echo -e "\e[1;33mso as not to clear the cache of the programs. If you think you will not use the"
@@ -115,7 +115,7 @@ echo -e "\e[1;33minstaller again, select \"y\" to delete it."
 echo -e "\e[1;32m                 "
 
 # Cleaning Pacman Cache
-sudo pacman -Sc
+sudo pacman -Sc --noconfirm
 
 sleep 3
 echo -e "\e[1;31m\e[1;1m\nLoading..."
