@@ -178,7 +178,6 @@ cp settings/start/default.jpg $HOME/.wallpapers/
 # Changing the new files owner
 sudo chown -R $user:$user $HOME/.config
 sudo chown -R $user:$user $HOME/.wallpapers
-sudo chown $user:$user $HOME/.xsession
 sudo chown -R $user:$user /usr/share/themes/Material-Black-Blueberry/
 sudo chown -R $user:$user /usr/share/icons/Material-Black-Blueberry-Suru/
 sudo chown $user:$user $HOME/gtkrc-2.0
