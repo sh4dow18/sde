@@ -1,9 +1,9 @@
-# Sh4dow's Window Manager Installer (SWM)
+# Sh4dow's Desktop Environment Installer (SDE)
 
 # Overview
 
 This guide teaches how to perform a clean install of Arch Linux, as well as
-how to use the "Sh4dow's Window Manager Installer"(SWM) which will be used
+how to use the "Sh4dow's Desktop Environment Installer"(SDE) which will be used
 to install window managers with custom settings, plus various additional
 programs that will complement and enhance the desktop environment for the
 user.
@@ -17,7 +17,7 @@ not is a clean installation.
 
 # Version
 
-Version: **1.1**
+Version: **2.0**
 
 # License
 
@@ -29,7 +29,7 @@ If you want to know about this license, click
 # Full Documentation
 
 To see the complete and updated documentation of this project, you can click 
-**[here](https://sh4dow18.github.io/swm/)**
+**[here](https://sh4dow18.github.io/sde/)**
  and it will redirect you to
 my website where I document everything new.
 
