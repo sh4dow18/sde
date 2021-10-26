@@ -140,7 +140,10 @@ sleep 5
 # Uninstalling Programs
 
 sudo pacman -Rsn xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib bat
-sudo rm /bin/qtile
+sudo pip uninstall xcffib
+sudo pip uninstall --no-cache-dir cairocffi
+sudo pip uninstall dbus-next
+sudo pip uninstall qtile
 
 echo -e "\e[1;33m\nIf you think you will use this installer again, select \"n\" to the following options"
 echo -e "\e[1;33mso as not to clear the cache of the programs. If you think you will not use the"

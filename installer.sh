@@ -133,8 +133,8 @@ HOME=/home/$user
 sudo mkdir $HOME/.config
 
 echo -e "\e[1;35m\n	- Changing Fonts"
-mkdir $HOME/.local
-mkdir $HOME/.local/share
+mkdir $HOME/.local 2> /dev/null
+mkdir $HOME/.local/share 2> /dev/null
 cp -r settings/fonts/ $HOME/.local/share/
 fc-cache -f
 
