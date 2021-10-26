@@ -103,10 +103,10 @@ sleep 5
 
 # Uninstalling Programs
 
-sudo pip uninstall qtile
-sudo pip uninstall dbus-next
-sudo pip uninstall --no-cache-dir cairocffi
-sudo pip uninstall xcffib
+sudo pip uninstall qtile -y
+sudo pip uninstall dbus-next -y
+sudo pip uninstall cairocffi -y
+sudo pip uninstall xcffib -y
 sudo pacman -Rsn xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib bat
 
 echo -e "\e[1;33m\nIf you think you will use this installer again, select \"n\" to the following options"
