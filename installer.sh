@@ -39,9 +39,6 @@ echo -e "\e[1;33m  https://github.com/sh4dow18				Sh4dow18 Proyect\n"
 echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 7
 
-echo -e "\e[1;31m\e[1;1m\nLoading..."
-sleep 4
-
 clear
 echo -e "\e[1;32m   ____         __       _____             __  __        __     __        "
 echo -e "\e[1;32m  /  _/__  ___ / /____ _/ / (_)__  ___ _  / / / /__  ___/ /__ _/ /____ ___"
