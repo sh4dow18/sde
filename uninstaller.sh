@@ -163,9 +163,6 @@ echo -e "\e[1;35m	- Removing Black Themes and Cursor\n"
 sudo rm -r /usr/share/themes/Material-Black-Blueberry/ /usr/share/icons/Material-Black-Blueberry-Suru/ $HOME/gtkrc-2.0 2> /dev/null
 sudo rm -r /usr/share/icons/Breeze/ 2> /dev/null
 
-# Removing File Checker
-sudo rm /etc/X11/sde
-
 sleep 3
 
 clear
