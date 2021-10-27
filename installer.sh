@@ -90,7 +90,7 @@ echo -e "\e[1;36m\n\nAdding Configuration..."
 sleep 5
 
 # Creating User Home's Variable
-user=$(who | grep :0 | cut -d " " -f 1)
+user=$(who | grep "(:0)" | cut -d " " -f 1)
 HOME=/home/$user
 
 # Creating Configuration Directory
