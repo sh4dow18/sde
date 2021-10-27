@@ -149,7 +149,7 @@ sleep 3
 echo -e "\e[1;32m	- Removing Qtile Files\n"
 
 # Removing Config, Wallpapers Directories and Qtile Files
-sudo rm -r $HOME/.config $HOME/.wallpapers $HOME/.local/share/fonts /etc/X11/qtile 2> /dev/null
+sudo rm -r $HOME/.config $HOME/.wallpapers $HOME/.local/share/fonts /etc/X11/qtile /usr/share/pictures/ 2> /dev/null
 
 sleep 3
 

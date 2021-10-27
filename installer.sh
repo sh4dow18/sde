@@ -114,6 +114,10 @@ echo -e "\e[1;31m\n	- Installing Lightdm Configuration"
 sudo cp settings/lightdm/lightdm.conf /etc/lightdm/
 sudo mkdir /usr/share/xsessions 2> /dev/null
 sudo systemctl enable lightdm 2> /dev/null
+sudo settings/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/
+sudo mkdir /usr/share/pictures 2> /dev/null
+sudo cp settings/lightdm/epic.jpg /usr/share/pictures/ 2> /dev/null
+sudo cp settings/lightdm/user.png /usr/share/pictures/ 2> /dev/null
 
 sleep 3
 
