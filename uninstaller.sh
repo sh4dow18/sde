@@ -138,22 +138,22 @@ sleep 3
 echo -e "\e[1;32m	- Removing Qtile Files\n"
 
 # Removing Config, Wallpapers Directories and Qtile Files
-sudo rm -r $HOME/.config $HOME/.wallpapers $HOME/.local/share/fonts /etc/X11/qtile
+sudo rm -r $HOME/.config $HOME/.wallpapers $HOME/.local/share/fonts /etc/X11/qtile 2> /dev/null
 
 sleep 3
 
 echo -e "\e[1;34m	- Removing Rofi Theme\n"
 
 # Removing Rofi Theme
-sudo rm /usr/share/rofi/themes/onedark.rasi
+sudo rm /usr/share/rofi/themes/onedark.rasi 2> /dev/null
 
 sleep 3
 
 echo -e "\e[1;35m	- Removing Black Themes and Cursor\n"
 
 # Removing Black Theme and New Cursor
-sudo rm -r /usr/share/themes/Material-Black-Blueberry/ /usr/share/icons/Material-Black-Blueberry-Suru/ $HOME/gtkrc-2.0
-sudo rm -r /usr/share/icons/Breeze/
+sudo rm -r /usr/share/themes/Material-Black-Blueberry/ /usr/share/icons/Material-Black-Blueberry-Suru/ $HOME/gtkrc-2.0 2> /dev/null
+sudo rm -r /usr/share/icons/Breeze/ 2> /dev/null
 
 sleep 3
 

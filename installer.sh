@@ -94,7 +94,7 @@ user=$(who | head -n 1 | cut -d " " -f 1)
 HOME=/home/$user
 
 # Creating Configuration Directory
-sudo mkdir $HOME/.config
+sudo mkdir $HOME/.config 2> /dev/null
 
 echo -e "\e[1;35m\n	- Changing Fonts"
 mkdir $HOME/.local 2> /dev/null
@@ -148,41 +148,41 @@ echo -e "\e[1;31m\n	- Installing Black Themes"
 # Installing Black Theme for Qtile
 sudo unzip settings/gtk/theme/Material-Black-Blueberry.zip > /dev/null
 sudo unzip settings/gtk/icons/Material-Black-Blueberry-Suru.zip > /dev/null
-sudo cp -r Material-Black-Blueberry/ /usr/share/themes/
-sudo rm -r Material-Black-Blueberry/
-sudo mv Material-Black-Blueberry-Suru/ /usr/share/icons/
-cp settings/gtk/install/gtkrc-2.0 $HOME/
-mkdir $HOME/.config/gtk-3.0
-cp settings/gtk/install/settings.ini $HOME/.config/gtk-3.0/
+sudo cp -r Material-Black-Blueberry/ /usr/share/themes/ 2> /dev/null
+sudo rm -r Material-Black-Blueberry/ 2> /dev/null
+sudo mv Material-Black-Blueberry-Suru/ /usr/share/icons/ 2> /dev/null
+cp settings/gtk/install/gtkrc-2.0 $HOME/ 2> /dev/null
+mkdir $HOME/.config/gtk-3.0 2> /dev/null
+cp settings/gtk/install/settings.ini $HOME/.config/gtk-3.0/ 2> /dev/null
 
 sleep 3
 
 echo -e "\e[1;32m\n	- Installing Cursor"
 
 # Installing New Cursor
-sudo tar -xf settings/gtk/cursor/Breeze.tar.gz
-sudo mv Breeze/ /usr/share/icons/
-sudo mkdir /usr/share/icons/default/ 2>/dev/null
-sudo cp settings/gtk/cursor/index.theme /usr/share/icons/default/
+sudo tar -xf settings/gtk/cursor/Breeze.tar.gz 2> /dev/null
+sudo mv Breeze/ /usr/share/icons/ 2> /dev/null
+sudo mkdir /usr/share/icons/default/ 2>/dev/null 2> /dev/null
+sudo cp settings/gtk/cursor/index.theme /usr/share/icons/default/ 2> /dev/null
 
 sleep 3
 
 echo -e "\e[1;33m\n	- Installing Final Files..."
 
 # Creating Wallpapers Directory
-sudo mkdir $HOME/.wallpapers
+sudo mkdir $HOME/.wallpapers 2> /dev/null
 
 # Installing Default Wallpaper
-cp settings/start/default.jpg $HOME/.wallpapers/
+cp settings/start/default.jpg $HOME/.wallpapers/ 2> /dev/null
 
 # Changing the new files owner
-sudo chown -R $user:$user $HOME/.config
-sudo chown -R $user:$user $HOME/.wallpapers
-sudo chown -R $user:$user /usr/share/themes/Material-Black-Blueberry/
-sudo chown -R $user:$user /usr/share/icons/Material-Black-Blueberry-Suru/
-sudo chown $user:$user $HOME/gtkrc-2.0
-sudo chown $user:$user /usr/share/rofi/themes/onedark.rasi
-sudo chown -R $user:$user $HOME/.local
+sudo chown -R $user:$user $HOME/.config 2> /dev/null
+sudo chown -R $user:$user $HOME/.wallpapers 2> /dev/null
+sudo chown -R $user:$user /usr/share/themes/Material-Black-Blueberry/ 2> /dev/null
+sudo chown -R $user:$user /usr/share/icons/Material-Black-Blueberry-Suru/ 2> /dev/null
+sudo chown $user:$user $HOME/gtkrc-2.0 2> /dev/null
+sudo chown $user:$user /usr/share/rofi/themes/onedark.rasi 2> /dev/null
+sudo chown -R $user:$user $HOME/.local 2> /dev/null
 
 sleep 3
 
