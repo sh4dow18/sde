@@ -74,8 +74,8 @@ echo -e "\e[1;35m	- Removing Lightdm Configuration\n"
 
 # Removing Lightdm Configuration
 sudo systemctl disable lightdm 2>/dev/null
-sudo rm -r /etc/lightdm/
-sudo rm -r /usr/share/xsessions/
+sudo rm -r /etc/lightdm/ 2>/dev/null
+sudo rm -r /usr/share/xsessions/ 2>/dev/null
 
 # Creating User Home Variable
 user=$(who | grep "(:0)" | cut -d " " -f 1)
