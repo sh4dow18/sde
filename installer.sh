@@ -126,16 +126,16 @@ sleep 3
 echo -e "\e[1;33m\n	- Installing Alacritty Configuration"
 
 # Installing Alacritty Configuration
-sudo cp -r settings/alacritty $HOME/.config/
+sudo cp -r settings/alacritty $HOME/.config/ 2> /dev/null
 
 sleep 3
 
 echo -e "\e[1;34m\n	- Installing Rofi Configuration"
 
 # Installing Rofi Menu Configuration
-sudo cp settings/rofi/onedark.rasi /usr/share/rofi/themes/
-mkdir $HOME/.config/rofi
-cp settings/rofi/config.rasi $HOME/.config/rofi/
+sudo cp settings/rofi/onedark.rasi /usr/share/rofi/themes/ 2> /dev/null
+mkdir $HOME/.config/rofi 2> /dev/null
+cp settings/rofi/config.rasi $HOME/.config/rofi/ 2> /dev/null
 
 sleep 3
 
@@ -143,8 +143,8 @@ echo -e "\e[1;35m\n	- Installing Fish Configuration"
 
 # Changing to the "Fish" shell and Installing "Fish" Configuration
 sudo chsh -s /bin/fish $user > /dev/null
-mkdir $HOME/.config/fish
-cp settings/fish/config.fish $HOME/.config/fish
+mkdir $HOME/.config/fish 2> /dev/null
+cp settings/fish/config.fish $HOME/.config/fish 2> /dev/null
 
 sleep 3
 
@@ -190,7 +190,7 @@ sudo chown $user:$user /usr/share/rofi/themes/onedark.rasi 2> /dev/null
 sudo chown -R $user:$user $HOME/.local 2> /dev/null
 
 # Creating File Checker
-sudo echo "This file is only used to check if "Sh4dow's Desktop Environment" is installed. Please do not delete." > /etc/X11/sde
+sudo echo "This file is only used to check if Sh4dow's Desktop Environment is installed. Please do not delete." > /etc/X11/sde
 
 sleep 3
 
