@@ -62,6 +62,7 @@ sleep 5
 
 sudo rm /etc/X11/sde > stderr_verification
 error=$(/bin/cat stderr_verification)
+rm stderr_verification
 if [[ $error -ne "" ]]; then
 	echo -e "\nSh4dow's Desktop Environment is not installed\n"
 	exit 0
