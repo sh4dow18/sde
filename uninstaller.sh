@@ -78,7 +78,7 @@ sudo rm -r /etc/lightdm/
 sudo rm -r /usr/share/xsessions/
 
 # Creating User Home Variable
-user=$(who | cut -d " " -f 1)
+user=$(who | grep :0 | cut -d " " -f 1)
 HOME=/home/$user
 
 sleep 3
