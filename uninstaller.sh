@@ -66,7 +66,7 @@ rm stderr_verification
 if [[ $error != "" ]]; then
 	echo -e "\nSh4dow's Desktop Environment is not installed\n"
 	exit 0
-elif [[ $(cat /etc/os-release | head -n 1 | sed 's/\"//g' | cut -d "=" -f 2) != "Arch Linux"]]; then
+elif [[ $(cat /etc/os-release | head -n 1 | sed 's/\"//g' | cut -d "=" -f 2) != "Arch Linux" ]]; then
 	echo -e "\nThis installer is for Arch Linux only. Exiting the installer...\n"
 	exit 0
 fi
