@@ -42,6 +42,9 @@ sleep 7
 if [[ -f /etc/X11/sde ]]; then
 	echo -e "\nSh4dow's Desktop Environment is already installed\n"
 	exit 0
+elif [[ $(cat /etc/os-release | head -n 1 | sed 's/\"//g' | cut -d "=" -f 2) != "Arch Linux"]]; then
+	echo -e "\nThis installer is for Arch Linux only. Exiting the installer...\n"
+	exit 0
 fi
 
 clear
