@@ -60,6 +60,13 @@ echo -e "\e[1;33m  https://github.com/sh4dow18				Sh4dow18 Proyect\n"
 echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 5
 
+sudo rm /etc/X11/sde > stderr_verification
+error=$(/bin/cat stderr_verification)
+if [[ $error -ne "" ]]; then
+	echo -e "\nSh4dow's Desktop Environment is not installed\n"
+	exit 0
+fi
+
 clear
 echo -e "\e[1;32m   ___                        _             __  __     _          __       ____       "
 echo -e "\e[1;32m  / _ \\_______ ___  ___ _____(_)__  ___ _  / / / /__  (_)__  ___ / /____ _/ / /__ ____"
@@ -154,6 +161,9 @@ echo -e "\e[1;35m	- Removing Black Themes and Cursor\n"
 # Removing Black Theme and New Cursor
 sudo rm -r /usr/share/themes/Material-Black-Blueberry/ /usr/share/icons/Material-Black-Blueberry-Suru/ $HOME/gtkrc-2.0 2> /dev/null
 sudo rm -r /usr/share/icons/Breeze/ 2> /dev/null
+
+# Removing File Checker
+sudo rm /etc/X11/sde
 
 sleep 3
 

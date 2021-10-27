@@ -39,6 +39,11 @@ echo -e "\e[1;33m  https://github.com/sh4dow18				Sh4dow18 Proyect\n"
 echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 7
 
+if [[ -f /etc/X11/sde ]]; then
+	echo -e "\nSh4dow's Desktop Environment is already installed\n"
+	exit 0
+fi
+
 clear
 echo -e "\e[1;32m   ____         __       _____             __  __        __     __        "
 echo -e "\e[1;32m  /  _/__  ___ / /____ _/ / (_)__  ___ _  / / / /__  ___/ /__ _/ /____ ___"
@@ -183,6 +188,9 @@ sudo chown -R $user:$user /usr/share/icons/Material-Black-Blueberry-Suru/ 2> /de
 sudo chown $user:$user $HOME/gtkrc-2.0 2> /dev/null
 sudo chown $user:$user /usr/share/rofi/themes/onedark.rasi 2> /dev/null
 sudo chown -R $user:$user $HOME/.local 2> /dev/null
+
+# Creating File Checker
+sudo echo "This file is only used to check if "Sh4dow's Desktop Environment" is installed. Please do not delete." > /etc/X11/sde
 
 sleep 3
 
