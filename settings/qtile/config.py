@@ -112,4 +112,4 @@ floating_layout = layout.Floating(float_rules=[
 auto_fullscreen = True
 focus_on_window_activation = "smart"
 
-wmname = "Sh4dow's Qtile"
+wmname = "LG3D Sh4dow's Qtile"
