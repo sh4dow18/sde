@@ -42,9 +42,6 @@ sleep 7
 if [[ -f /etc/X11/sde ]]; then
 	echo -e "\nSh4dow's Desktop Environment is already installed\n"
 	exit 0
-elif [[ $(cat /etc/os-release | head -n 1 | sed 's/\"//g' | cut -d "=" -f 2) != "Arch Linux" ]]; then
-	echo -e "\nThis installer is for Arch Linux only. Exiting the installer...\n"
-	exit 0
 fi
 
 clear
@@ -58,7 +55,7 @@ echo -e "\e[1;33m\n\nLooking for System Updates...\n"
 sleep 5
 
 # Installing System Updates
-sudo pacman -Syu --noconfirm
+sudo apt update && sudo apt upgrade
 
 echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 4
@@ -74,11 +71,14 @@ echo -e "\e[1;36m\n\nLooking for the Necessary Programs...\n"
 sleep 5
 
 # Installing Programs
-sudo pacman -S --noconfirm xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib bat
+sudo apt install xorg lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python3-pip snapd firefox-esr vlc zip unzip scrot rofi udiskie ntfs-3g exa fish pulseaudio pavucontrol neofetch feh x11-xserver-utils bat lxappearance
 sudo pip install --no-cache-dir xcffib
 sudo pip install --no-cache-dir cairocffi
 sudo pip install --no-cache-dir dbus-next
 sudo pip install --no-cache-dir qtile
+sudo snap install pinta
+sudo snap install code --classic
+sudo snap install alacritty --classic --candidate
 
 echo -e "\e[1;31m\e[1;1m\nLoading..."
 sleep 4
@@ -111,7 +111,6 @@ cp -r settings/fonts/ $HOME/.local/share/
 fc-cache -f
 
 echo -e "\e[1;31m\n	- Installing Lightdm Configuration"
-sudo cp settings/lightdm/lightdm.conf /etc/lightdm/
 sudo mkdir /usr/share/xsessions 2> /dev/null
 sudo systemctl enable lightdm 2> /dev/null
 sudo cp settings/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/
@@ -142,7 +141,7 @@ echo -e "\e[1;34m\n	- Installing Rofi Configuration"
 # Installing Rofi Menu Configuration
 sudo cp settings/rofi/onedark.rasi /usr/share/rofi/themes/ 2> /dev/null
 mkdir $HOME/.config/rofi 2> /dev/null
-cp settings/rofi/config.rasi $HOME/.config/rofi/ 2> /dev/null
+cp settings/rofi/config $HOME/.config/rofi/ 2> /dev/null
 
 sleep 3
 

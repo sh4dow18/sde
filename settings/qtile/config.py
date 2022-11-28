@@ -14,7 +14,7 @@ from libqtile.lazy import lazy
 
 super_key = "mod4"
 alt_key = "mod1"
-terminal = "alacritty"
+terminal = "/snap/bin/alacritty"
 
 keys = [
     Key([super_key], "j", lazy.layout.down(), desc="Move focus down"),
