@@ -2,11 +2,10 @@
 
 # Overview
 
-This guide teaches how to perform a clean install of Arch Linux, as well as
-how to use the "Sh4dow's Desktop Environment Installer"(SDE) which will be used
-to install window managers with custom settings, plus various additional
-programs that will complement and enhance the desktop environment for the
-user.
+This guide teaches how to use the "Sh4dow's Desktop Environment Installer" (SDE)
+which will be used to install window managers with custom settings, plus various
+additional programs that will complement and enhance the desktop environment for
+the user.
 
 I will assume that you are comfortable with Linux based operating systems
 and command line interfaces.
