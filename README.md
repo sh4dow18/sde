@@ -11,13 +11,13 @@ user.
 I will assume that you are comfortable with Linux based operating systems
 and command line interfaces.
 
-If you have a previous Arch Linux installation, I recommend you to backup
-your files and reinstall Arch Linux. This because, can be problems if it
+If you have a previous Debian installation, I recommend you to backup
+your files and reinstall Debian. This because, can be problems if it
 not is a clean installation.
 
 # Version
 
-Version: **2.0**
+Version: **3.0**
 
 # License
 
