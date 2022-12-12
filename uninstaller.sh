@@ -66,9 +66,6 @@ rm stderr_verification
 if [[ $error != "" ]]; then
 	echo -e "\nSh4dow's Desktop Environment is not installed\n"
 	exit 0
-elif [[ $(cat /etc/os-release | head -n 1 | sed 's/\"//g' | cut -d "=" -f 2) != "Arch Linux" ]]; then
-	echo -e "\nThis installer is for Arch Linux only. Exiting the installer...\n"
-	exit 0
 fi
 
 clear
@@ -114,16 +111,19 @@ sleep 5
 
 # Uninstalling Programs
 
+sudo snap remove pinta
+sudo snap remove code
+sudo snap remove alacritty
 sudo pip uninstall qtile -y
 sudo pip uninstall dbus-next -y
 sudo pip uninstall cairocffi -y
 sudo pip uninstall xcffib -y
-sudo pacman -Rsn --noconfirm xorg-server lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python-pip firefox alacritty vlc zip unzip code scrot pinta qalculate-gtk rofi udiskie ntfs-3g exa fish network-manager-applet pulseaudio pavucontrol neofetch feh xorg-xrandr pacman-contrib bat
+sudo apt purge xorg lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings python3-pip snapd firefox-esr vlc zip unzip scrot rofi udiskie ntfs-3g exa fish pulseaudio pavucontrol neofetch feh x11-xserver-utils bat lxappearance
 
 echo -e "\e[1;32m                 "
 
-# Cleaning Pacman Cache
-sudo pacman -Sc --noconfirm
+# Removing All Trash Dependences
+sudo apt autoremove
 
 sleep 3
 echo -e "\e[1;31m\e[1;1m\nLoading..."
